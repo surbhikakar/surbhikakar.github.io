@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Surbhi Kakar's journey as a Yoga Teacher, Mindfulness Trainer, and Data Scientist. Discover her path from India to Amsterdam, her qualifications, and her passion for holistic well-being.">
+    <meta name="keywords" content="Surbhi Kakar, yoga journey, mindfulness training, data scientist, PhD computer science, Eline Snel, yoga minds, author">
+    <meta name="author" content="Surbhi Kakar">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist">
+    <meta property="og:description" content="Discover Surbhi's journey from India to Amsterdam, combining yoga, mindfulness, and data science for a holistic approach to life.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surbhikakar.com/about">
+
+    <title>About | Surbhi Kakar</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Surbhi Kakar",
+            "jobTitle": ["Yoga Teacher", "Mindfulness Trainer", "Data Scientist"],
+            "alumniOf": [
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Jamia Millia Islamia",
+                    "description": "PhD in Computer Science"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Yoga Minds",
+                    "description": "Yoga Teacher Training"
+                }
+            ],
+            "hasCredential": [
+                {
+                    "@type": "EducationalOccupationalCredential",
+                    "name": "Certified Mindfulness Children Trainer",
+                    "credentialCategory": "Certificate"
+                }
+            ],
+            "author": {
+                "@type": "Book",
+                "name": "The Dancing Leaf",
+                "publisher": "Hay House",
+                "datePublished": "2024"
+            }
+        }
+    }
+    </script>
+
+    <style>
+        /* CSS Custom Properties */
+        :root {
+            --olive-green: #7e8446;
+            --soft-yellow: #ffda6b;
+            --warm-off-white: #f5f0e3;
+            --light-beige: #e5dbc1;
+            --white: #ffffff;
+            --dark-brown: #484338;
+            --muted-brown: #a58251;
+            --warm-tan: #d4ad76;
+            --tag-background: #d1c9b3;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --max-width: 1200px;
+            --header-height: 80px;
+        }
+
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--dark-brown);
+            background-color: var(--warm-off-white);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.3rem, 3vw, 1.6rem); }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--olive-green);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--muted-brown);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(72, 67, 56, 0.08);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--dark-brown);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--olive-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--dark-brown);
+            margin: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: var(--header-height);
+        }
+
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--light-beige) 0%, var(--warm-off-white) 100%);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .page-header h1 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: var(--muted-brown);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Journey Section */
+        .journey-section {
+            background-color: var(--white);
+        }
+
+        .journey-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .journey-content h2 {
+            color: var(--dark-brown);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .journey-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--olive-green);
+        }
+
+        .journey-content p {
+            color: var(--muted-brown);
+        }
+
+        .journey-highlight {
+            background-color: var(--warm-off-white);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--olive-green);
+        }
+
+        .journey-highlight p {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--dark-brown);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin-top: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--light-beige);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--olive-green);
+            border: 2px solid var(--white);
+        }
+
+        .timeline-year {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--olive-green);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-title {
+            font-weight: 500;
+            color: var(--dark-brown);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+            margin: 0;
+        }
+
+        /* Credentials Section */
+        .credentials-section {
+            background-color: var(--warm-off-white);
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .credential-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(72, 67, 56, 0.06);
+        }
+
+        .credential-card h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .credential-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light-beige);
+        }
+
+        .credential-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .credential-name {
+            font-weight: 500;
+            color: var(--dark-brown);
+            margin-bottom: 0.25rem;
+        }
+
+        .credential-detail {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+        }
+
+        /* Publications Section */
+        .publications-section {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            color: var(--muted-brown);
+            font-size: 1.1rem;
+        }
+
+        .publications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .publication-card {
+            background-color: var(--warm-off-white);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .publication-type {
+            display: inline-block;
+            background-color: var(--tag-background);
+            color: var(--dark-brown);
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .publication-card h3 {
+            color: var(--dark-brown);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-meta {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-desc {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+        }
+
+        /* Volunteering Section */
+        .volunteering-section {
+            background-color: var(--light-beige);
+        }
+
+        .volunteering-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .volunteer-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .volunteer-card h4 {
+            color: var(--dark-brown);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .volunteer-card p {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--light-beige);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--warm-off-white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--light-beige);
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--soft-yellow);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(229, 219, 193, 0.2);
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 0;
+                box-shadow: 0 5px 10px rgba(72, 67, 56, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--light-beige);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .journey-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Surbhi Kakar</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>About Me</h1>
+            <p>A journey of connecting body, mind, and purpose through yoga, mindfulness, and analytical thinking.</p>
+        </section>
+
+        <!-- Yoga Journey Section -->
+        <section class="journey-section">
+            <div class="container">
+                <div class="journey-grid">
+                    <div class="journey-content">
+                        <h2>My Yoga Journey</h2>
+                        <p>
+                            My relationship with yoga began in India in 2017, where I first discovered
+                            its transformative power. What started as a physical practice soon became
+                            a profound journey of self-discovery and inner connection.
+                        </p>
+                        <p>
+                            In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands,
+                            deepening my understanding and commitment to sharing this ancient wisdom with others.
+                            Today, I teach both Hatha and Vinyasa yoga, guiding students toward finding their
+                            own connection between breath, body, and consciousness.
+                        </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2017</div>
+                                <div class="timeline-title">Began yoga practice in India</div>
+                                <div class="timeline-desc">First steps on the yogic path</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-title">Yoga Teacher Training</div>
+                                <div class="timeline-desc">Certified at Yoga Minds, Netherlands</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">Present</div>
+                                <div class="timeline-title">Teaching Hatha & Vinyasa</div>
+                                <div class="timeline-desc">Yoga Teacher at Yoga Minds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="journey-highlight">
+                        <p>
+                            "For me, yoga transcends the mat; it is a union with my true self.
+                            Whether I'm engaging in a physical Virabhadrasana (Warrior Pose)
+                            or tapping into my inner spiritual warrior, yoga helps me connect
+                            with my emotions, thoughts, and body."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mindfulness Training Section -->
+        <section class="journey-section" style="background-color: var(--warm-off-white);">
+            <div class="container">
+                <div class="journey-grid">
+                    <div class="journey-highlight" style="background-color: var(--white);">
+                        <p>
+                            "Teaching mindfulness to children is about meeting them where they are—
+                            using playful activities, stories, and gentle awareness practices to help
+                            them develop skills that will serve them throughout their lives."
+                        </p>
+                    </div>
+                    <div class="journey-content">
+                        <h2>Mindfulness Training</h2>
+                        <p>
+                            My passion for mindfulness led me to complete Eline Snel's renowned
+                            <a href="https://www.elinesnel.com/en/course-to-become-a-mindfulness-children-trainer/" target="_blank" rel="noopener">
+                            Course to become a mindfulness children trainer</a>. This certification
+                            equipped me with specialized techniques for teaching present-moment
+                            awareness to young minds.
+                        </p>
+                        <p>
+                            Since October 2025, I've been working as a Mindfulness Trainer for Children
+                            at the Academy for Mindful Teaching, helping children ages 5-11 develop
+                            essential life skills through playful, age-appropriate practices.
+                        </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2025</div>
+                                <div class="timeline-title">Eline Snel Certification</div>
+                                <div class="timeline-desc">Mindfulness Children Trainer course</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">Oct 2025</div>
+                                <div class="timeline-title">Academy for Mindful Teaching</div>
+                                <div class="timeline-desc">Mindfulness Trainer for Children</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Background Section -->
+        <section class="credentials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Professional Background</h2>
+                    <p>Bridging technology, research, and holistic well-being</p>
+                </div>
+                <div class="credentials-grid">
+                    <div class="credential-card">
+                        <h3>Education</h3>
+                        <div class="credential-item">
+                            <div class="credential-name">PhD in Computer Science</div>
+                            <div class="credential-detail">Jamia Millia Islamia, 2017-2023</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">MCA (Master of Computer Applications)</div>
+                            <div class="credential-detail">IP University, 2008-2011</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">BSc (Hons) Computer Science</div>
+                            <div class="credential-detail">Delhi University, 2004-2007</div>
+                        </div>
+                    </div>
+                    <div class="credential-card">
+                        <h3>Current Roles</h3>
+                        <div class="credential-item">
+                            <div class="credential-name">Data Scientist</div>
+                            <div class="credential-detail">Rabobank, Dec 2022 - Present</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">Yoga Teacher</div>
+                            <div class="credential-detail">Yoga Minds, Aug 2024 - Present</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">Mindfulness Trainer for Children</div>
+                            <div class="credential-detail">Academy for Mindful Teaching, Oct 2025 - Present</div>
+                        </div>
+                    </div>
+                    <div class="credential-card">
+                        <h3>Previous Experience</h3>
+                        <div class="credential-item">
+                            <div class="credential-name">eBay</div>
+                            <div class="credential-detail">Software Development</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">OneXillium</div>
+                            <div class="credential-detail">Technology Solutions</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">Cvent</div>
+                            <div class="credential-detail">Software Development</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name">Assistant Professor</div>
+                            <div class="credential-detail">Academic Teaching</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="publications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Publications</h2>
+                    <p>Contributions to literature and research</p>
+                </div>
+                <div class="publications-grid">
+                    <article class="publication-card">
+                        <span class="publication-type">Book</span>
+                        <h3>The Dancing Leaf</h3>
+                        <p class="publication-meta">Hay House, 2024</p>
+                        <p class="publication-desc">
+                            A contemplative work exploring themes of nature, mindfulness,
+                            and the gentle wisdom found in observing the world around us.
+                        </p>
+                    </article>
+                    <article class="publication-card">
+                        <span class="publication-type">Textbook</span>
+                        <h3>A Textbook of Java Programming</h3>
+                        <p class="publication-meta">2017</p>
+                        <p class="publication-desc">
+                            A comprehensive guide to Java programming, designed for students
+                            and professionals seeking to master the language.
+                        </p>
+                    </article>
+                    <article class="publication-card">
+                        <span class="publication-type">Research</span>
+                        <h3>IEEE Research Papers</h3>
+                        <p class="publication-meta">Multiple publications</p>
+                        <p class="publication-desc">
+                            Academic research papers on Machine Learning and Artificial Intelligence,
+                            contributing to the advancement of computer science knowledge.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteering Section -->
+        <section class="volunteering-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Giving Back</h2>
+                    <p>Contributing to community and causes I care about</p>
+                </div>
+                <div class="volunteering-grid">
+                    <div class="volunteer-card">
+                        <h4>Wake Up Amsterdam</h4>
+                        <p>Organizing mindfulness days for adults, fostering present-moment awareness in the community.</p>
+                    </div>
+                    <div class="volunteer-card">
+                        <h4>Fruittuin Van West</h4>
+                        <p>Environmental volunteering, connecting with nature and supporting sustainable urban agriculture.</p>
+                    </div>
+                    <div class="volunteer-card">
+                        <h4>UN Volunteers</h4>
+                        <p>Authoring Java programming courses, making technology education accessible globally.</p>
+                    </div>
+                    <div class="volunteer-card">
+                        <h4>Landmark</h4>
+                        <p>Life coaching and personal development, helping others discover their potential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;">
+                    Amstelveen / Amsterdam<br>
+                    The Netherlands
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

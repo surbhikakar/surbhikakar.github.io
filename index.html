@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surbhi Kakar - Yoga Teacher, Mindfulness Trainer for Children, and Data Scientist based in Amsterdam. Offering yoga classes, mindfulness programs, and holistic well-being guidance.">
+    <meta name="keywords" content="yoga teacher, mindfulness trainer, children mindfulness, data scientist, Amsterdam, Amstelveen, hatha yoga, vinyasa yoga">
+    <meta name="author" content="Surbhi Kakar">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist">
+    <meta property="og:description" content="Guiding children and adults toward mindful living through yoga, mindfulness training, and a balanced approach to life.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surbhikakar.com">
+    <meta property="og:locale" content="en_US">
+
+    <title>Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Surbhi Kakar",
+        "jobTitle": ["Yoga Teacher", "Mindfulness Trainer", "Data Scientist"],
+        "description": "Yoga Teacher, Mindfulness Trainer for Children, and Data Scientist based in Amsterdam",
+        "url": "https://surbhikakar.com",
+        "email": "hello@surbhikakar.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/surbhi-kakar-6141b917/"
+        ],
+        "worksFor": [
+            {
+                "@type": "Organization",
+                "name": "Yoga Minds"
+            },
+            {
+                "@type": "Organization",
+                "name": "Academy for Mindful Teaching"
+            },
+            {
+                "@type": "Organization",
+                "name": "Rabobank"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* CSS Custom Properties */
+        :root {
+            --olive-green: #7e8446;
+            --soft-yellow: #ffda6b;
+            --warm-off-white: #f5f0e3;
+            --light-beige: #e5dbc1;
+            --white: #ffffff;
+            --dark-brown: #484338;
+            --muted-brown: #a58251;
+            --warm-tan: #d4ad76;
+            --tag-background: #d1c9b3;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --max-width: 1200px;
+            --header-height: 80px;
+        }
+
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--dark-brown);
+            background-color: var(--warm-off-white);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.3rem, 3vw, 1.6rem); }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--olive-green);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--muted-brown);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(72, 67, 56, 0.08);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--dark-brown);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--olive-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--dark-brown);
+            margin: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: var(--header-height);
+        }
+
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: calc(100vh - var(--header-height));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--warm-off-white) 0%, var(--light-beige) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(126, 132, 70, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            margin-bottom: 1rem;
+            color: var(--dark-brown);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-style: italic;
+            color: var(--olive-green);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-intro {
+            font-size: 1.1rem;
+            color: var(--muted-brown);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--olive-green);
+            color: var(--white);
+            border: 2px solid var(--olive-green);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--olive-green);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--dark-brown);
+            border: 2px solid var(--dark-brown);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--dark-brown);
+            color: var(--white);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Pillars Section */
+        .pillars {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            color: var(--muted-brown);
+            font-size: 1.1rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pillar-card {
+            background-color: var(--warm-off-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(72, 67, 56, 0.1);
+        }
+
+        .pillar-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-beige);
+            border-radius: 50%;
+        }
+
+        .pillar-icon svg {
+            width: 30px;
+            height: 30px;
+            stroke: var(--olive-green);
+            fill: none;
+            stroke-width: 1.5;
+        }
+
+        .pillar-card h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+        }
+
+        .pillar-card p {
+            color: var(--muted-brown);
+            font-size: 0.95rem;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background-color: var(--light-beige);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .quote {
+            font-family: var(--font-serif);
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-style: italic;
+            color: var(--dark-brown);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .quote-author {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--muted-brown);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--olive-green);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .btn-primary {
+            background-color: var(--soft-yellow);
+            color: var(--dark-brown);
+            border-color: var(--soft-yellow);
+        }
+
+        .cta-section .btn-primary:hover {
+            background-color: var(--white);
+            border-color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--light-beige);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--warm-off-white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--light-beige);
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--soft-yellow);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(229, 219, 193, 0.2);
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 0;
+                box-shadow: 0 5px 10px rgba(72, 67, 56, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--light-beige);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 4rem 1.5rem;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Surbhi Kakar</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Surbhi Kakar</h1>
+                <p class="hero-subtitle">Yoga Teacher | Mindfulness Trainer | Data Scientist</p>
+                <p class="hero-intro">
+                    Guiding children and adults toward mindful living through yoga,
+                    mindfulness training, and a balanced approach to life. Based in Amsterdam.
+                </p>
+                <div class="btn-group">
+                    <a href="mindfulness-program-h1-2026.html" class="btn btn-primary">Mindfulness Programs</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars Section -->
+        <section class="pillars">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Three Pillars of Practice</h2>
+                    <p>A holistic approach to well-being and growth</p>
+                </div>
+                <div class="pillars-grid">
+                    <article class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M12 6v6l4 2"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Yoga</h3>
+                        <p>
+                            Teaching Hatha and Vinyasa yoga with a focus on connecting body,
+                            breath, and mind. Yoga is more than physical practice—it's a path
+                            to inner awareness and balance.
+                        </p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Mindfulness</h3>
+                        <p>
+                            Certified mindfulness trainer for children, helping young minds
+                            develop present-moment awareness, emotional regulation, and
+                            inner calm through playful, age-appropriate practices.
+                        </p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M8 12h8"/>
+                                <path d="M12 8v8"/>
+                                <circle cx="8" cy="8" r="1"/>
+                                <circle cx="16" cy="16" r="1"/>
+                            </svg>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>
+                            PhD in Computer Science with expertise in machine learning and AI.
+                            Bringing analytical thinking and research rigor to understanding
+                            patterns in data and human behavior.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <blockquote class="quote">
+                "For me, yoga transcends the mat; it is a union with my true self.
+                Whether engaging in a physical Warrior Pose or tapping into my inner
+                spiritual warrior, yoga helps me connect with my emotions, thoughts, and body."
+            </blockquote>
+            <p class="quote-author">— Surbhi Kakar</p>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Start Your Mindfulness Journey</h2>
+                <p>
+                    Whether you're seeking yoga classes, mindfulness training for your child,
+                    or simply want to learn more about living mindfully, I'm here to guide you.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;">
+                    Amstelveen / Amsterdam<br>
+                    The Netherlands
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

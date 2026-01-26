@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mindfulness Matters - 8-week mindfulness programs for children ages 5-11 in Amsterdam. Help your child develop present-moment awareness, emotional regulation, and inner calm through playful activities.">
+    <meta name="keywords" content="mindfulness for children, children meditation, mindfulness Amsterdam, Eline Snel method, mindfulness ages 5-8, mindfulness ages 8-11, attention training kids">
+    <meta name="author" content="Surbhi Kakar">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mindfulness Programs for Children | Surbhi Kakar">
+    <meta property="og:description" content="8-week mindfulness programs designed for children ages 5-11, teaching present-moment awareness through playful, age-appropriate practices.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surbhikakar.com/mindfulness-program-h1-2026">
+
+    <title>Mindfulness Programs for Children | Surbhi Kakar</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Mindfulness Matters for Children",
+        "description": "8-week mindfulness programs designed for children ages 5-11, teaching present-moment awareness, emotional regulation, and inner calm through playful activities.",
+        "provider": {
+            "@type": "Person",
+            "name": "Surbhi Kakar",
+            "jobTitle": "Mindfulness Trainer for Children"
+        },
+        "educationalLevel": "Children ages 5-11",
+        "coursePrerequisites": "None",
+        "hasCourseInstance": [
+            {
+                "@type": "CourseInstance",
+                "name": "Mindfulness Matters (Ages 5-8)",
+                "courseMode": "In-person"
+            },
+            {
+                "@type": "CourseInstance",
+                "name": "Mindfulness Matters (Ages 8-11)",
+                "courseMode": "In-person"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* CSS Custom Properties */
+        :root {
+            --olive-green: #7e8446;
+            --soft-yellow: #ffda6b;
+            --warm-off-white: #f5f0e3;
+            --light-beige: #e5dbc1;
+            --white: #ffffff;
+            --dark-brown: #484338;
+            --muted-brown: #a58251;
+            --warm-tan: #d4ad76;
+            --tag-background: #d1c9b3;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+            --max-width: 1200px;
+            --header-height: 80px;
+        }
+
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-weight: 300;
+            line-height: 1.7;
+            color: var(--dark-brown);
+            background-color: var(--warm-off-white);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+        h3 { font-size: clamp(1.3rem, 3vw, 1.6rem); }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--olive-green);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--muted-brown);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(72, 67, 56, 0.08);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--dark-brown);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--olive-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--dark-brown);
+            margin: 5px 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: var(--header-height);
+        }
+
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--olive-green) 0%, #6b7139 100%);
+            text-align: center;
+            padding: 5rem 2rem;
+            color: var(--white);
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--soft-yellow);
+            color: var(--dark-brown);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            color: var(--muted-brown);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            background-color: var(--white);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .intro-content h2 {
+            color: var(--dark-brown);
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-content p {
+            color: var(--muted-brown);
+        }
+
+        .intro-highlight {
+            background-color: var(--warm-off-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .intro-highlight h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .benefit-list {
+            list-style: none;
+        }
+
+        .benefit-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            color: var(--muted-brown);
+        }
+
+        .benefit-list li::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: var(--olive-green);
+            border-radius: 50%;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        /* Programs Section */
+        .programs-section {
+            background-color: var(--warm-off-white);
+        }
+
+        .program-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .tab-btn {
+            padding: 1rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 500;
+            background-color: var(--white);
+            color: var(--dark-brown);
+            border: 2px solid var(--light-beige);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--olive-green);
+        }
+
+        .tab-btn.active {
+            background-color: var(--olive-green);
+            color: var(--white);
+            border-color: var(--olive-green);
+        }
+
+        .program-content {
+            display: none;
+        }
+
+        .program-content.active {
+            display: block;
+        }
+
+        .program-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .program-header h3 {
+            font-size: 2rem;
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .program-header .age-tag {
+            display: inline-block;
+            background-color: var(--soft-yellow);
+            color: var(--dark-brown);
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .program-header p {
+            color: var(--muted-brown);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Week Cards */
+        .weeks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .week-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(72, 67, 56, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .week-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(72, 67, 56, 0.1);
+        }
+
+        .week-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: var(--olive-green);
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .week-card h4 {
+            color: var(--dark-brown);
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .week-card .concept {
+            font-size: 0.9rem;
+            color: var(--olive-green);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .week-card p {
+            font-size: 0.9rem;
+            color: var(--muted-brown);
+            margin-bottom: 0;
+        }
+
+        .week-card ul {
+            list-style: none;
+            margin-top: 0.75rem;
+        }
+
+        .week-card ul li {
+            font-size: 0.85rem;
+            color: var(--muted-brown);
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 0.3rem;
+        }
+
+        .week-card ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--olive-green);
+        }
+
+        /* Parent Support Section */
+        .parent-section {
+            background-color: var(--white);
+        }
+
+        .parent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .parent-card {
+            background-color: var(--warm-off-white);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .parent-card h3 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .parent-card p {
+            color: var(--muted-brown);
+            font-size: 0.95rem;
+        }
+
+        .parent-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .parent-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--muted-brown);
+        }
+
+        .parent-card ul li::before {
+            content: '✓';
+            color: var(--olive-green);
+            font-weight: 600;
+        }
+
+        /* Practice Box */
+        .practice-box {
+            background-color: var(--light-beige);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .practice-box h4 {
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .practice-steps {
+            list-style: none;
+            counter-reset: steps;
+        }
+
+        .practice-steps li {
+            counter-increment: steps;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--muted-brown);
+        }
+
+        .practice-steps li::before {
+            content: counter(steps);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: var(--olive-green);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Credentials Section */
+        .credentials-section {
+            background-color: var(--light-beige);
+        }
+
+        .credentials-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .credentials-content h2 {
+            color: var(--dark-brown);
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-content p {
+            color: var(--muted-brown);
+            margin-bottom: 2rem;
+        }
+
+        .credential-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .credential-badge {
+            background-color: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .credential-badge h4 {
+            color: var(--dark-brown);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .credential-badge p {
+            color: var(--muted-brown);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--olive-green);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--soft-yellow);
+            color: var(--dark-brown);
+            border: 2px solid var(--soft-yellow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--white);
+            border-color: var(--white);
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background-color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .quote {
+            font-family: var(--font-serif);
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            font-style: italic;
+            color: var(--dark-brown);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--light-beige);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--warm-off-white);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--light-beige);
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--soft-yellow);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(229, 219, 193, 0.2);
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 0;
+                box-shadow: 0 5px 10px rgba(72, 67, 56, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--light-beige);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .program-tabs {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .tab-btn {
+                text-align: center;
+            }
+
+            .weeks-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Surbhi Kakar</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html" class="active">Mindfulness Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <span class="badge">H1 2026 Programs</span>
+            <h1>Mindfulness Matters</h1>
+            <p>8-week mindfulness programs designed to help children develop present-moment awareness, emotional understanding, and inner calm through playful, age-appropriate practices.</p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <h2>What is Mindfulness for Children?</h2>
+                        <p>
+                            Mindfulness teaches children to be fully present in the moment, enabling them
+                            to understand their inner and outer world with an open and loving mind.
+                            Through playful activities, games, and gentle awareness practices, children
+                            learn to observe their thoughts, feelings, and body sensations without judgment.
+                        </p>
+                        <p>
+                            Young children naturally live in the present moment. Mindfulness helps them
+                            maintain this gift while developing skills to navigate their inner and outer
+                            worlds—skills that will serve them throughout their lives.
+                        </p>
+                        <p>
+                            Based on the renowned Eline Snel method, these programs introduce attention
+                            training in a way that's accessible and engaging for children, helping them
+                            cope with stress, improve concentration, and develop emotional resilience.
+                        </p>
+                    </div>
+                    <div class="intro-highlight">
+                        <h3>Why Mindfulness Matters</h3>
+                        <ul class="benefit-list">
+                            <li>Improved focus and concentration in school and daily activities</li>
+                            <li>Better emotional regulation and understanding of feelings</li>
+                            <li>Reduced anxiety and stress through present-moment awareness</li>
+                            <li>Enhanced self-awareness and body connection</li>
+                            <li>Greater empathy and kindness toward self and others</li>
+                            <li>Tools for managing difficult emotions and situations</li>
+                            <li>Improved sleep quality and relaxation skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="programs-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Programs</h2>
+                    <p>Choose the program designed for your child's age group</p>
+                </div>
+
+                <div class="program-tabs">
+                    <button class="tab-btn active" data-tab="ages-5-8">Ages 5-8</button>
+                    <button class="tab-btn" data-tab="ages-8-11">Ages 8-11</button>
+                </div>
+
+                <!-- Ages 5-8 Program -->
+                <div class="program-content active" id="ages-5-8">
+                    <div class="program-header">
+                        <span class="age-tag">Ages 5-8</span>
+                        <h3>Building Foundation Skills for Young Learners</h3>
+                        <p>
+                            This program introduces young children to attention training through playful
+                            activities, helping them develop body awareness and emotional understanding
+                            in age-appropriate ways with shorter activities suited for younger attention spans.
+                        </p>
+                    </div>
+
+                    <div class="weeks-grid">
+                        <article class="week-card">
+                            <span class="week-number">1</span>
+                            <h4>The A for Attention</h4>
+                            <p class="concept">"Friendly, mild attention for what is here now"</p>
+                            <p>Children learn to pay attention to the present moment, notice what they're doing and feeling, and discover that relaxation feels good.</p>
+                            <ul>
+                                <li>Focus on breathing for a moment</li>
+                                <li>Practice "doing nothing"</li>
+                                <li>No risk of making mistakes</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">2</span>
+                            <h4>An Expedition Through Your Body</h4>
+                            <p class="concept">"Living in your body means picking up signals"</p>
+                            <p>Children learn that their body tells them when they're tired, happy, nervous, or sad—and how to recognize these signals.</p>
+                            <ul>
+                                <li>Recognize body signals</li>
+                                <li>Learn "enough is enough"</li>
+                                <li>Become familiar with body language</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">3</span>
+                            <h4>Using All Five Senses</h4>
+                            <p class="concept">"Using senses brings you closer to actual experience"</p>
+                            <p>Through the raisin exercise and "sitting like a frog," children learn to observe without judgment and experience the moment directly.</p>
+                            <ul>
+                                <li>Direct experience vs. thinking about it</li>
+                                <li>Let go of "stories" about experiences</li>
+                                <li>Observe as if for the first time</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">4</span>
+                            <h4>You Can Feel Feelings</h4>
+                            <p class="concept">"The four basic feelings are anger, joy, fear, and sorrow"</p>
+                            <p>Children discover that all feelings are normal and temporary—like weather that comes and goes.</p>
+                            <ul>
+                                <li>Feelings are reactions to situations</li>
+                                <li>You're not your feelings—you have them</li>
+                                <li>Sail between ignoring and being overwhelmed</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">5</span>
+                            <h4>Accepting Feelings</h4>
+                            <p class="concept">"Acceptance means recognizing what is happening"</p>
+                            <p>Children learn to notice feelings in their bodies and accept them with friendly attention—without suppressing or being overwhelmed.</p>
+                            <ul>
+                                <li>Accept pleasant and unpleasant feelings</li>
+                                <li>Pay friendly attention without judgment</li>
+                                <li>Attention creates clarity</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">6</span>
+                            <h4>Moving Consciously</h4>
+                            <p class="concept">"When consciousness and body work together"</p>
+                            <p>Children notice their possibilities and limitations, learning to react to their body appropriately and build self-awareness.</p>
+                            <ul>
+                                <li>Notice what you can and cannot do</li>
+                                <li>Learn when something is enough</li>
+                                <li>Trust body as a wise ally</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">7</span>
+                            <h4>The Power of Imagination</h4>
+                            <p class="concept">"Using imagination enables creative dealing with fears"</p>
+                            <p>Children learn to make "pictures" in their minds, creating safe places and dealing creatively with things they're afraid of.</p>
+                            <ul>
+                                <li>Strengthen confidence in change</li>
+                                <li>Create safe places mentally</li>
+                                <li>Understand by "seeing" not just "thinking"</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">8</span>
+                            <h4>Being Nice is Fun</h4>
+                            <p class="concept">"Friendliness is one of the most powerful qualities"</p>
+                            <p>Children practice being complimentary and giving friendly feelings, creating a positive atmosphere around them.</p>
+                            <ul>
+                                <li>Practice being kind</li>
+                                <li>Give and receive friendly feelings</li>
+                                <li>Create positive atmospheres</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Ages 8-11 Program -->
+                <div class="program-content" id="ages-8-11">
+                    <div class="program-header">
+                        <span class="age-tag">Ages 8-11</span>
+                        <h3>Building Present-Moment Awareness in Young Minds</h3>
+                        <p>
+                            This program teaches children to be fully present in the moment, enabling them
+                            to understand their inner and outer world with an open and loving mind through
+                            age-appropriate exercises and deeper exploration.
+                        </p>
+                    </div>
+
+                    <div class="weeks-grid">
+                        <article class="week-card">
+                            <span class="week-number">1</span>
+                            <h4>Observing and Focusing</h4>
+                            <p class="concept">"Being fully present without judgments"</p>
+                            <p>Children learn to be present in the here and now, focusing attention on breath movement and starting to observe their inner world.</p>
+                            <ul>
+                                <li>Breath as an anchor</li>
+                                <li>Become aware of inner world</li>
+                                <li>Observe without making judgments</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">2</span>
+                            <h4>Listening to Your Body</h4>
+                            <p class="concept">"Your body acts as a barometer for experiences"</p>
+                            <p>Children develop conscious awareness of different body areas and learn to trust body signals, building self-awareness and healthy boundaries.</p>
+                            <ul>
+                                <li>Body scan techniques</li>
+                                <li>Recognize physical limits</li>
+                                <li>Notice when "enough is enough"</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">3</span>
+                            <h4>Using All Five Senses</h4>
+                            <p class="concept">"Learning to observe through senses without judgment"</p>
+                            <p>Through the "weather inside" exercise and raisin meditation, children distinguish between direct experience and mental interpretations.</p>
+                            <ul>
+                                <li>Direct sensory experience vs. thinking</li>
+                                <li>Let go of "stories" about experiences</li>
+                                <li>Experience things as they truly are</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">4</span>
+                            <h4>Patience, Faith & Letting Go</h4>
+                            <p class="concept">"Managing desires by accepting what is"</p>
+                            <p>Children learn three core principles: patience (changes cannot be forced), faith (everything changes), and letting go (release the urge to control).</p>
+                            <ul>
+                                <li>Manage desires through inner imagery</li>
+                                <li>Accept current reality</li>
+                                <li>Trust in life's natural changes</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">5</span>
+                            <h4>You Can Feel Feelings</h4>
+                            <p class="concept">"Emotions are temporary reactions"</p>
+                            <p>Children understand the four basic emotions and learn the crucial distinction: "It's not you being angry, it's you having angry feelings."</p>
+                            <ul>
+                                <li>All feelings are temporary</li>
+                                <li>Navigate between ignoring and overwhelm</li>
+                                <li>Like weather, feelings come and go</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">6</span>
+                            <h4>The Wondrous World of Thoughts</h4>
+                            <p class="concept">"Learning to observe and manage thoughts"</p>
+                            <p>In our stimulus-heavy world, children discover they can channel their mental energy more effectively and gain greater peace of mind.</p>
+                            <ul>
+                                <li>Recognize "stories of the thinking mind"</li>
+                                <li>Make conscious choices about focus</li>
+                                <li>Improve concentration and memory</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">7</span>
+                            <h4>It's Fun to Be Kind</h4>
+                            <p class="concept">"Kindness is like gentle rain that falls everywhere"</p>
+                            <p>Children learn that kindness touches the heart directly and that awareness of unkindness is essential for creating a better world.</p>
+                            <ul>
+                                <li>Kind thoughts reduce prejudice</li>
+                                <li>Kindness opens you to reality</li>
+                                <li>Practice kindness even during conflicts</li>
+                            </ul>
+                        </article>
+
+                        <article class="week-card">
+                            <span class="week-number">8</span>
+                            <h4>The Secret of Happiness</h4>
+                            <p class="concept">"Happiness comes from being fully present"</p>
+                            <p>The culminating lesson teaches children to find joy in the present moment and the wonder of simplicity—in fresh bread, a poem, a sweet smile.</p>
+                            <ul>
+                                <li>Every moment is new and unique</li>
+                                <li>Happiness is found in simple things</li>
+                                <li>Allow precious moments to happen</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <blockquote class="quote">
+                "The present moment is the only time we truly have. Teaching children to be here, now, is one of the greatest gifts we can offer."
+            </blockquote>
+        </section>
+
+        <!-- Parent Support Section -->
+        <section class="parent-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Supporting Your Child's Journey</h2>
+                    <p>Parents and teachers play an essential role in reinforcing mindfulness at home and school</p>
+                </div>
+
+                <div class="parent-grid">
+                    <div class="parent-card">
+                        <h3>How Parents Can Help</h3>
+                        <ul>
+                            <li>Practice mindfulness together as a family</li>
+                            <li>Notice and name feelings with your child without judgment</li>
+                            <li>Take 3 deep breaths together before meals or bedtime</li>
+                            <li>Practice mindful eating, walking, or listening</li>
+                            <li>Build in screen-free time for reflection</li>
+                            <li>Create quiet moments for awareness</li>
+                            <li>Model present-moment awareness yourself</li>
+                        </ul>
+                    </div>
+
+                    <div class="parent-card">
+                        <h3>How Teachers Can Help</h3>
+                        <ul>
+                            <li>Use bell signals for attention transitions</li>
+                            <li>Incorporate brief mindful moments in the day</li>
+                            <li>Celebrate kind and friendly behavior</li>
+                            <li>Support sensory awareness activities</li>
+                            <li>Recognize emotional awareness in students</li>
+                            <li>Encourage kind communication</li>
+                            <li>Support practice in daily routines</li>
+                        </ul>
+                    </div>
+
+                    <div class="parent-card">
+                        <h3>Practice Tips for Home</h3>
+                        <p>For younger children (5-8):</p>
+                        <ul>
+                            <li>"Let's breathe like a sleeping bear" or blow bubbles slowly</li>
+                            <li>"I see you're feeling angry. That's okay. Where do you feel it?"</li>
+                            <li>Slowly eat a raisin or piece of fruit, using all senses</li>
+                            <li>Ring a bell to practice stopping and listening quietly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="practice-box">
+                    <h4>Try This at Home: Sitting Like a Frog (Ages 5-8)</h4>
+                    <ol class="practice-steps">
+                        <li>Sit comfortably with feet flat on the floor</li>
+                        <li>Rest hands gently on your lap</li>
+                        <li>Notice your tummy moving as you breathe</li>
+                        <li>Stay still and calm like a frog watching a fly</li>
+                        <li>Try for just 1-2 minutes at first</li>
+                    </ol>
+                </div>
+
+                <div class="practice-box" style="margin-top: 1.5rem;">
+                    <h4>Try This at Home: Breath Awareness (Ages 8-11)</h4>
+                    <ol class="practice-steps">
+                        <li>Sit comfortably and close your eyes</li>
+                        <li>Notice your breath moving in and out</li>
+                        <li>When your mind wanders, gently bring attention back to breathing</li>
+                        <li>After 3 minutes, slowly open your eyes</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials Section -->
+        <section class="credentials-section">
+            <div class="container">
+                <div class="credentials-content">
+                    <h2>Your Child's Mindfulness Guide</h2>
+                    <p>
+                        These programs are taught by Surbhi Kakar, a certified mindfulness trainer
+                        who completed Eline Snel's renowned "Course to become a mindfulness children trainer."
+                        Surbhi brings a unique perspective combining her training in mindfulness
+                        with her background as a yoga teacher and data scientist.
+                    </p>
+                    <div class="credential-badges">
+                        <div class="credential-badge">
+                            <h4>Academy for Mindful Teaching</h4>
+                            <p>Mindfulness Trainer for Children</p>
+                        </div>
+                        <div class="credential-badge">
+                            <h4>Eline Snel Method</h4>
+                            <p>Certified Mindfulness Children Trainer</p>
+                        </div>
+                        <div class="credential-badge">
+                            <h4>Yoga Minds</h4>
+                            <p>Certified Yoga Teacher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Enroll Your Child</h2>
+                <p>
+                    Interested in enrolling your child in a Mindfulness Matters program?
+                    Get in touch to learn about upcoming sessions, schedules, and how to register.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Express Interest</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;">
+                    Amstelveen / Amsterdam<br>
+                    The Netherlands
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Tab functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const programContents = document.querySelectorAll('.program-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all tabs and content
+                tabBtns.forEach(b => b.classList.remove('active'));
+                programContents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab
+                btn.classList.add('active');
+
+                // Show corresponding content
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
