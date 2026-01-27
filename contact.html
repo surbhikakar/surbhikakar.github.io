@@ -183,6 +183,44 @@
             transition: transform 0.3s ease;
         }
 
+        /* Language Switcher */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+            background-color: var(--warm-off-white);
+            padding: 0.25rem;
+            border-radius: 4px;
+        }
+
+        .lang-btn {
+            padding: 0.35rem 0.6rem;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+            color: var(--muted-brown);
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            color: var(--dark-brown);
+        }
+
+        .lang-btn.active {
+            background-color: var(--white);
+            color: var(--olive-green);
+            box-shadow: 0 1px 3px rgba(72, 67, 56, 0.1);
+        }
+
         /* Main Content */
         main {
             margin-top: var(--header-height);
@@ -506,24 +544,30 @@
         <nav>
             <a href="index.html" class="logo">Surbhi Kakar</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="nl" onclick="setLanguage('nl')">NL</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Page Header -->
         <section class="page-header">
-            <h1>Get in Touch</h1>
-            <p>I'd love to hear from you. Whether you're interested in yoga classes, mindfulness programs for your child, or simply want to connect.</p>
+            <h1 data-i18n="contact.title">Get in Touch</h1>
+            <p data-i18n="contact.subtitle">I'd love to hear from you. Whether you're interested in yoga classes, mindfulness programs for your child, or simply want to connect.</p>
         </section>
 
         <!-- Contact Section -->
@@ -531,8 +575,8 @@
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2>Let's Connect</h2>
-                        <p>
+                        <h2 data-i18n="contact.connect.title">Let's Connect</h2>
+                        <p data-i18n="contact.connect.text">
                             I welcome inquiries about yoga classes, mindfulness training for children,
                             speaking engagements, or professional collaborations. Feel free to reach
                             out through any of the channels below.
@@ -547,7 +591,7 @@
                                     </svg>
                                 </div>
                                 <div class="contact-details">
-                                    <h3>Email</h3>
+                                    <h3 data-i18n="contact.email">Email</h3>
                                     <p><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></p>
                                 </div>
                             </div>
@@ -560,8 +604,8 @@
                                     </svg>
                                 </div>
                                 <div class="contact-details">
-                                    <h3>Location</h3>
-                                    <p>Amstelveen / Amsterdam<br>The Netherlands</p>
+                                    <h3 data-i18n="contact.location">Location</h3>
+                                    <p data-i18n="contact.location.text">Amstelveen / Amsterdam<br>The Netherlands</p>
                                 </div>
                             </div>
 
@@ -574,8 +618,8 @@
                                     </svg>
                                 </div>
                                 <div class="contact-details">
-                                    <h3>LinkedIn</h3>
-                                    <p><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+                                    <h3 data-i18n="contact.linkedin">LinkedIn</h3>
+                                    <p><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener" data-i18n="contact.linkedin.link">Connect on LinkedIn</a></p>
                                 </div>
                             </div>
 
@@ -588,8 +632,8 @@
                                     </svg>
                                 </div>
                                 <div class="contact-details">
-                                    <h3>Yoga Classes</h3>
-                                    <p>Available through <a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></p>
+                                    <h3 data-i18n="contact.yoga">Yoga Classes</h3>
+                                    <p><span data-i18n="contact.yoga.text">Available through</span> <a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></p>
                                 </div>
                             </div>
                         </div>
@@ -602,8 +646,8 @@
         <section class="services-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Ways to Work Together</h2>
-                    <p>Explore the different services and programs I offer</p>
+                    <h2 data-i18n="contact.services.title">Ways to Work Together</h2>
+                    <p data-i18n="contact.services.subtitle">Explore the different services and programs I offer</p>
                 </div>
                 <div class="services-grid">
                     <article class="service-card">
@@ -613,12 +657,12 @@
                                 <path d="M12 6v6l4 2"/>
                             </svg>
                         </div>
-                        <h3>Yoga Classes</h3>
-                        <p>
+                        <h3 data-i18n="contact.services.yoga.title">Yoga Classes</h3>
+                        <p data-i18n="contact.services.yoga.desc">
                             Join me for Hatha or Vinyasa yoga sessions that connect breath,
                             body, and mind. Available through Yoga Minds in the Amsterdam area.
                         </p>
-                        <a href="https://www.yogaminds.nl" target="_blank" rel="noopener" class="btn-secondary">Learn More</a>
+                        <a href="https://www.yogaminds.nl" target="_blank" rel="noopener" class="btn-secondary" data-i18n="contact.services.yoga.btn">Learn More</a>
                     </article>
 
                     <article class="service-card">
@@ -630,12 +674,12 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                         </div>
-                        <h3>Children's Mindfulness</h3>
-                        <p>
+                        <h3 data-i18n="contact.services.mindfulness.title">Children's Mindfulness</h3>
+                        <p data-i18n="contact.services.mindfulness.desc">
                             8-week mindfulness programs designed for children ages 5-11,
                             teaching present-moment awareness through playful activities.
                         </p>
-                        <a href="mindfulness-program-h1-2026.html" class="btn-secondary">View Programs</a>
+                        <a href="mindfulness-program-h1-2026.html" class="btn-secondary" data-i18n="contact.services.mindfulness.btn">View Programs</a>
                     </article>
 
                     <article class="service-card">
@@ -647,12 +691,12 @@
                                 <line x1="8" y1="23" x2="16" y2="23"/>
                             </svg>
                         </div>
-                        <h3>Speaking & Workshops</h3>
-                        <p>
+                        <h3 data-i18n="contact.services.speaking.title">Speaking & Workshops</h3>
+                        <p data-i18n="contact.services.speaking.desc">
                             Available for speaking engagements, corporate wellness workshops,
                             and educational presentations on mindfulness and well-being.
                         </p>
-                        <a href="mailto:hello@surbhikakar.com?subject=Speaking%20Engagement%20Inquiry" class="btn-secondary">Inquire</a>
+                        <a href="mailto:hello@surbhikakar.com?subject=Speaking%20Engagement%20Inquiry" class="btn-secondary" data-i18n="contact.services.speaking.btn">Inquire</a>
                     </article>
                 </div>
             </div>
@@ -662,22 +706,22 @@
         <section class="affiliations-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Affiliations</h2>
-                    <p>Organizations I'm proud to be associated with</p>
+                    <h2 data-i18n="contact.affiliations.title">Affiliations</h2>
+                    <p data-i18n="contact.affiliations.subtitle">Organizations I'm proud to be associated with</p>
                 </div>
                 <div class="affiliations-grid">
                     <div class="affiliation">
-                        <h4>Yoga Minds</h4>
-                        <p>Yoga Teacher Training & Classes</p>
+                        <h4 data-i18n="contact.affiliations.yogaminds">Yoga Minds</h4>
+                        <p data-i18n="contact.affiliations.yogaminds.desc">Yoga Teacher Training & Classes</p>
                         <p><a href="https://www.yogaminds.nl" target="_blank" rel="noopener">yogaminds.nl</a></p>
                     </div>
                     <div class="affiliation">
-                        <h4>Academy for Mindful Teaching</h4>
-                        <p>Mindfulness Trainer for Children</p>
+                        <h4 data-i18n="contact.affiliations.academy">Academy for Mindful Teaching</h4>
+                        <p data-i18n="contact.affiliations.academy.desc">Mindfulness Trainer for Children</p>
                     </div>
                     <div class="affiliation">
-                        <h4>Wake Up Amsterdam</h4>
-                        <p>Mindfulness Community</p>
+                        <h4 data-i18n="contact.affiliations.wakeup">Wake Up Amsterdam</h4>
+                        <p data-i18n="contact.affiliations.wakeup.desc">Mindfulness Community</p>
                     </div>
                 </div>
             </div>
@@ -687,16 +731,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Navigation</h4>
+                <h4 data-i18n="footer.navigation">Navigation</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Connect</h4>
+                <h4 data-i18n="footer.connect">Connect</h4>
                 <ul>
                     <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
                     <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -704,18 +748,19 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Location</h4>
-                <p style="font-size: 0.9rem; opacity: 0.8;">
+                <h4 data-i18n="footer.location">Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;" data-i18n="footer.location.text">
                     Amstelveen / Amsterdam<br>
                     The Netherlands
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Surbhi Kakar. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');

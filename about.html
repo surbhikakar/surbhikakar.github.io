@@ -198,6 +198,44 @@
             transition: transform 0.3s ease;
         }
 
+        /* Language Switcher */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+            background-color: var(--warm-off-white);
+            padding: 0.25rem;
+            border-radius: 4px;
+        }
+
+        .lang-btn {
+            padding: 0.35rem 0.6rem;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+            color: var(--muted-brown);
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            color: var(--dark-brown);
+        }
+
+        .lang-btn.active {
+            background-color: var(--white);
+            color: var(--olive-green);
+            box-shadow: 0 1px 3px rgba(72, 67, 56, 0.1);
+        }
+
         /* Main Content */
         main {
             margin-top: var(--header-height);
@@ -577,24 +615,30 @@
         <nav>
             <a href="index.html" class="logo">Surbhi Kakar</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="nl" onclick="setLanguage('nl')">NL</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Page Header -->
         <section class="page-header">
-            <h1>About Me</h1>
-            <p>A journey of connecting body, mind, and purpose through yoga, mindfulness, and analytical thinking.</p>
+            <h1 data-i18n="about.title">About Me</h1>
+            <p data-i18n="about.subtitle">A journey of connecting body, mind, and purpose through yoga, mindfulness, and analytical thinking.</p>
         </section>
 
         <!-- Yoga Journey Section -->
@@ -602,13 +646,13 @@
             <div class="container">
                 <div class="journey-grid">
                     <div class="journey-content">
-                        <h2>My Yoga Journey</h2>
-                        <p>
+                        <h2 data-i18n="about.yoga.title">My Yoga Journey</h2>
+                        <p data-i18n="about.yoga.p1">
                             My relationship with yoga began in India in 2017, where I first discovered
                             its transformative power. What started as a physical practice soon became
                             a profound journey of self-discovery and inner connection.
                         </p>
-                        <p>
+                        <p data-i18n="about.yoga.p2">
                             In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands,
                             deepening my understanding and commitment to sharing this ancient wisdom with others.
                             Today, I teach both Hatha and Vinyasa yoga, guiding students toward finding their
@@ -617,23 +661,23 @@
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="timeline-year">2017</div>
-                                <div class="timeline-title">Began yoga practice in India</div>
-                                <div class="timeline-desc">First steps on the yogic path</div>
+                                <div class="timeline-title" data-i18n="about.yoga.timeline.2017">Began yoga practice in India</div>
+                                <div class="timeline-desc" data-i18n="about.yoga.timeline.2017.desc">First steps on the yogic path</div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-year">2024</div>
-                                <div class="timeline-title">Yoga Teacher Training</div>
-                                <div class="timeline-desc">Certified at Yoga Minds, Netherlands</div>
+                                <div class="timeline-title" data-i18n="about.yoga.timeline.2024">Yoga Teacher Training</div>
+                                <div class="timeline-desc" data-i18n="about.yoga.timeline.2024.desc">Certified at Yoga Minds, Netherlands</div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-year">Present</div>
-                                <div class="timeline-title">Teaching Hatha & Vinyasa</div>
-                                <div class="timeline-desc">Yoga Teacher at Yoga Minds</div>
+                                <div class="timeline-year" data-i18n="about.yoga.timeline.present">Present</div>
+                                <div class="timeline-title" data-i18n="about.yoga.timeline.present">Teaching Hatha & Vinyasa</div>
+                                <div class="timeline-desc" data-i18n="about.yoga.timeline.present.desc">Yoga Teacher at Yoga Minds</div>
                             </div>
                         </div>
                     </div>
                     <div class="journey-highlight">
-                        <p>
+                        <p data-i18n="about.yoga.quote">
                             "For me, yoga transcends the mat; it is a union with my true self.
                             Whether I'm engaging in a physical Virabhadrasana (Warrior Pose)
                             or tapping into my inner spiritual warrior, yoga helps me connect
@@ -649,22 +693,22 @@
             <div class="container">
                 <div class="journey-grid">
                     <div class="journey-highlight" style="background-color: var(--white);">
-                        <p>
+                        <p data-i18n="about.mindfulness.quote">
                             "Teaching mindfulness to children is about meeting them where they are—
                             using playful activities, stories, and gentle awareness practices to help
                             them develop skills that will serve them throughout their lives."
                         </p>
                     </div>
                     <div class="journey-content">
-                        <h2>Mindfulness Training</h2>
-                        <p>
+                        <h2 data-i18n="about.mindfulness.title">Mindfulness Training</h2>
+                        <p data-i18n="about.mindfulness.p1">
                             My passion for mindfulness led me to complete Eline Snel's renowned
                             <a href="https://www.elinesnel.com/en/course-to-become-a-mindfulness-children-trainer/" target="_blank" rel="noopener">
                             Course to become a mindfulness children trainer</a>. This certification
                             equipped me with specialized techniques for teaching present-moment
                             awareness to young minds.
                         </p>
-                        <p>
+                        <p data-i18n="about.mindfulness.p2">
                             Since October 2025, I've been working as a Mindfulness Trainer for Children
                             at the Academy for Mindful Teaching, helping children ages 5-11 develop
                             essential life skills through playful, age-appropriate practices.
@@ -672,13 +716,13 @@
                         <div class="timeline">
                             <div class="timeline-item">
                                 <div class="timeline-year">2025</div>
-                                <div class="timeline-title">Eline Snel Certification</div>
-                                <div class="timeline-desc">Mindfulness Children Trainer course</div>
+                                <div class="timeline-title" data-i18n="about.mindfulness.timeline.2025">Eline Snel Certification</div>
+                                <div class="timeline-desc" data-i18n="about.mindfulness.timeline.2025.desc">Mindfulness Children Trainer course</div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-year">Oct 2025</div>
-                                <div class="timeline-title">Academy for Mindful Teaching</div>
-                                <div class="timeline-desc">Mindfulness Trainer for Children</div>
+                                <div class="timeline-title" data-i18n="about.mindfulness.timeline.oct2025">Academy for Mindful Teaching</div>
+                                <div class="timeline-desc" data-i18n="about.mindfulness.timeline.oct2025.desc">Mindfulness Trainer for Children</div>
                             </div>
                         </div>
                     </div>
@@ -690,57 +734,57 @@
         <section class="credentials-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Professional Background</h2>
-                    <p>Bridging technology, research, and holistic well-being</p>
+                    <h2 data-i18n="about.credentials.title">Professional Background</h2>
+                    <p data-i18n="about.credentials.subtitle">Bridging technology, research, and holistic well-being</p>
                 </div>
                 <div class="credentials-grid">
                     <div class="credential-card">
-                        <h3>Education</h3>
+                        <h3 data-i18n="about.education.title">Education</h3>
                         <div class="credential-item">
-                            <div class="credential-name">PhD in Computer Science</div>
-                            <div class="credential-detail">Jamia Millia Islamia, 2017-2023</div>
+                            <div class="credential-name" data-i18n="about.education.phd">PhD in Computer Science</div>
+                            <div class="credential-detail" data-i18n="about.education.phd.detail">Jamia Millia Islamia, 2017-2023</div>
                         </div>
                         <div class="credential-item">
-                            <div class="credential-name">MCA (Master of Computer Applications)</div>
-                            <div class="credential-detail">IP University, 2008-2011</div>
+                            <div class="credential-name" data-i18n="about.education.mca">MCA (Master of Computer Applications)</div>
+                            <div class="credential-detail" data-i18n="about.education.mca.detail">IP University, 2008-2011</div>
                         </div>
                         <div class="credential-item">
-                            <div class="credential-name">BSc (Hons) Computer Science</div>
-                            <div class="credential-detail">Delhi University, 2004-2007</div>
-                        </div>
-                    </div>
-                    <div class="credential-card">
-                        <h3>Current Roles</h3>
-                        <div class="credential-item">
-                            <div class="credential-name">Data Scientist</div>
-                            <div class="credential-detail">Rabobank, Dec 2022 - Present</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name">Yoga Teacher</div>
-                            <div class="credential-detail">Yoga Minds, Aug 2024 - Present</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name">Mindfulness Trainer for Children</div>
-                            <div class="credential-detail">Academy for Mindful Teaching, Oct 2025 - Present</div>
+                            <div class="credential-name" data-i18n="about.education.bsc">BSc (Hons) Computer Science</div>
+                            <div class="credential-detail" data-i18n="about.education.bsc.detail">Delhi University, 2004-2007</div>
                         </div>
                     </div>
                     <div class="credential-card">
-                        <h3>Previous Experience</h3>
+                        <h3 data-i18n="about.roles.title">Current Roles</h3>
                         <div class="credential-item">
-                            <div class="credential-name">eBay</div>
-                            <div class="credential-detail">Software Development</div>
+                            <div class="credential-name" data-i18n="about.roles.ds">Data Scientist</div>
+                            <div class="credential-detail" data-i18n="about.roles.ds.detail">Rabobank, Dec 2022 - Present</div>
                         </div>
                         <div class="credential-item">
-                            <div class="credential-name">OneXillium</div>
-                            <div class="credential-detail">Technology Solutions</div>
+                            <div class="credential-name" data-i18n="about.roles.yoga">Yoga Teacher</div>
+                            <div class="credential-detail" data-i18n="about.roles.yoga.detail">Yoga Minds, Aug 2024 - Present</div>
                         </div>
                         <div class="credential-item">
-                            <div class="credential-name">Cvent</div>
-                            <div class="credential-detail">Software Development</div>
+                            <div class="credential-name" data-i18n="about.roles.mindfulness">Mindfulness Trainer for Children</div>
+                            <div class="credential-detail" data-i18n="about.roles.mindfulness.detail">Academy for Mindful Teaching, Oct 2025 - Present</div>
+                        </div>
+                    </div>
+                    <div class="credential-card">
+                        <h3 data-i18n="about.experience.title">Previous Experience</h3>
+                        <div class="credential-item">
+                            <div class="credential-name" data-i18n="about.experience.ebay">eBay</div>
+                            <div class="credential-detail" data-i18n="about.experience.ebay.detail">Software Development</div>
                         </div>
                         <div class="credential-item">
-                            <div class="credential-name">Assistant Professor</div>
-                            <div class="credential-detail">Academic Teaching</div>
+                            <div class="credential-name" data-i18n="about.experience.onexillium">OneXillium</div>
+                            <div class="credential-detail" data-i18n="about.experience.onexillium.detail">Technology Solutions</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name" data-i18n="about.experience.cvent">Cvent</div>
+                            <div class="credential-detail" data-i18n="about.experience.cvent.detail">Software Development</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="credential-name" data-i18n="about.experience.professor">Assistant Professor</div>
+                            <div class="credential-detail" data-i18n="about.experience.professor.detail">Academic Teaching</div>
                         </div>
                     </div>
                 </div>
@@ -751,33 +795,33 @@
         <section class="publications-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Publications</h2>
-                    <p>Contributions to literature and research</p>
+                    <h2 data-i18n="about.publications.title">Publications</h2>
+                    <p data-i18n="about.publications.subtitle">Contributions to literature and research</p>
                 </div>
                 <div class="publications-grid">
                     <article class="publication-card">
-                        <span class="publication-type">Book</span>
-                        <h3>The Dancing Leaf</h3>
-                        <p class="publication-meta">Hay House, 2024</p>
-                        <p class="publication-desc">
+                        <span class="publication-type" data-i18n="about.publications.book">Book</span>
+                        <h3 data-i18n="about.publications.dancing.title">The Dancing Leaf</h3>
+                        <p class="publication-meta" data-i18n="about.publications.dancing.meta">Hay House, 2024</p>
+                        <p class="publication-desc" data-i18n="about.publications.dancing.desc">
                             A contemplative work exploring themes of nature, mindfulness,
                             and the gentle wisdom found in observing the world around us.
                         </p>
                     </article>
                     <article class="publication-card">
-                        <span class="publication-type">Textbook</span>
-                        <h3>A Textbook of Java Programming</h3>
-                        <p class="publication-meta">2017</p>
-                        <p class="publication-desc">
+                        <span class="publication-type" data-i18n="about.publications.textbook">Textbook</span>
+                        <h3 data-i18n="about.publications.java.title">A Textbook of Java Programming</h3>
+                        <p class="publication-meta" data-i18n="about.publications.java.meta">2017</p>
+                        <p class="publication-desc" data-i18n="about.publications.java.desc">
                             A comprehensive guide to Java programming, designed for students
                             and professionals seeking to master the language.
                         </p>
                     </article>
                     <article class="publication-card">
-                        <span class="publication-type">Research</span>
-                        <h3>IEEE Research Papers</h3>
-                        <p class="publication-meta">Multiple publications</p>
-                        <p class="publication-desc">
+                        <span class="publication-type" data-i18n="about.publications.research">Research</span>
+                        <h3 data-i18n="about.publications.ieee.title">IEEE Research Papers</h3>
+                        <p class="publication-meta" data-i18n="about.publications.ieee.meta">Multiple publications</p>
+                        <p class="publication-desc" data-i18n="about.publications.ieee.desc">
                             Academic research papers on Machine Learning and Artificial Intelligence,
                             contributing to the advancement of computer science knowledge.
                         </p>
@@ -790,25 +834,25 @@
         <section class="volunteering-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Giving Back</h2>
-                    <p>Contributing to community and causes I care about</p>
+                    <h2 data-i18n="about.volunteering.title">Giving Back</h2>
+                    <p data-i18n="about.volunteering.subtitle">Contributing to community and causes I care about</p>
                 </div>
                 <div class="volunteering-grid">
                     <div class="volunteer-card">
-                        <h4>Wake Up Amsterdam</h4>
-                        <p>Organizing mindfulness days for adults, fostering present-moment awareness in the community.</p>
+                        <h4 data-i18n="about.volunteering.wakeup.title">Wake Up Amsterdam</h4>
+                        <p data-i18n="about.volunteering.wakeup.desc">Organizing mindfulness days for adults, fostering present-moment awareness in the community.</p>
                     </div>
                     <div class="volunteer-card">
-                        <h4>Fruittuin Van West</h4>
-                        <p>Environmental volunteering, connecting with nature and supporting sustainable urban agriculture.</p>
+                        <h4 data-i18n="about.volunteering.fruittuin.title">Fruittuin Van West</h4>
+                        <p data-i18n="about.volunteering.fruittuin.desc">Environmental volunteering, connecting with nature and supporting sustainable urban agriculture.</p>
                     </div>
                     <div class="volunteer-card">
-                        <h4>UN Volunteers</h4>
-                        <p>Authoring Java programming courses, making technology education accessible globally.</p>
+                        <h4 data-i18n="about.volunteering.un.title">UN Volunteers</h4>
+                        <p data-i18n="about.volunteering.un.desc">Authoring Java programming courses, making technology education accessible globally.</p>
                     </div>
                     <div class="volunteer-card">
-                        <h4>Landmark</h4>
-                        <p>Life coaching and personal development, helping others discover their potential.</p>
+                        <h4 data-i18n="about.volunteering.landmark.title">Landmark</h4>
+                        <p data-i18n="about.volunteering.landmark.desc">Life coaching and personal development, helping others discover their potential.</p>
                     </div>
                 </div>
             </div>
@@ -818,16 +862,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Navigation</h4>
+                <h4 data-i18n="footer.navigation">Navigation</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Connect</h4>
+                <h4 data-i18n="footer.connect">Connect</h4>
                 <ul>
                     <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
                     <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -835,18 +879,19 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Location</h4>
-                <p style="font-size: 0.9rem; opacity: 0.8;">
+                <h4 data-i18n="footer.location">Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;" data-i18n="footer.location.text">
                     Amstelveen / Amsterdam<br>
                     The Netherlands
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Surbhi Kakar. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');

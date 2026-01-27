@@ -191,6 +191,44 @@
             transition: transform 0.3s ease;
         }
 
+        /* Language Switcher */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+            background-color: var(--warm-off-white);
+            padding: 0.25rem;
+            border-radius: 4px;
+        }
+
+        .lang-btn {
+            padding: 0.35rem 0.6rem;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            background: none;
+            border: none;
+            color: var(--muted-brown);
+            cursor: pointer;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            color: var(--dark-brown);
+        }
+
+        .lang-btn.active {
+            background-color: var(--white);
+            color: var(--olive-green);
+            box-shadow: 0 1px 3px rgba(72, 67, 56, 0.1);
+        }
+
         /* Main Content */
         main {
             margin-top: var(--header-height);
@@ -524,16 +562,22 @@
         <nav>
             <a href="index.html" class="logo">Surbhi Kakar</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="nl" onclick="setLanguage('nl')">NL</button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -541,15 +585,15 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Surbhi Kakar</h1>
-                <p class="hero-subtitle">Yoga Teacher | Mindfulness Trainer | Data Scientist</p>
-                <p class="hero-intro">
+                <h1 data-i18n="hero.title">Surbhi Kakar</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Yoga Teacher | Mindfulness Trainer | Data Scientist</p>
+                <p class="hero-intro" data-i18n="hero.intro">
                     Guiding children and adults toward mindful living through yoga,
                     mindfulness training, and a balanced approach to life. Based in Amsterdam.
                 </p>
                 <div class="btn-group">
-                    <a href="mindfulness-program-h1-2026.html" class="btn btn-primary">Mindfulness Programs</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    <a href="mindfulness-program-h1-2026.html" class="btn btn-primary" data-i18n="hero.cta.programs">Mindfulness Programs</a>
+                    <a href="about.html" class="btn btn-secondary" data-i18n="hero.cta.learn">Learn More</a>
                 </div>
             </div>
         </section>
@@ -558,8 +602,8 @@
         <section class="pillars">
             <div class="container">
                 <div class="section-header">
-                    <h2>Three Pillars of Practice</h2>
-                    <p>A holistic approach to well-being and growth</p>
+                    <h2 data-i18n="pillars.title">Three Pillars of Practice</h2>
+                    <p data-i18n="pillars.subtitle">A holistic approach to well-being and growth</p>
                 </div>
                 <div class="pillars-grid">
                     <article class="pillar-card">
@@ -570,8 +614,8 @@
                                 <circle cx="12" cy="12" r="3"/>
                             </svg>
                         </div>
-                        <h3>Yoga</h3>
-                        <p>
+                        <h3 data-i18n="pillars.yoga.title">Yoga</h3>
+                        <p data-i18n="pillars.yoga.desc">
                             Teaching Hatha and Vinyasa yoga with a focus on connecting body,
                             breath, and mind. Yoga is more than physical practice—it's a path
                             to inner awareness and balance.
@@ -585,8 +629,8 @@
                                 <path d="M2 12l10 5 10-5"/>
                             </svg>
                         </div>
-                        <h3>Mindfulness</h3>
-                        <p>
+                        <h3 data-i18n="pillars.mindfulness.title">Mindfulness</h3>
+                        <p data-i18n="pillars.mindfulness.desc">
                             Certified mindfulness trainer for children, helping young minds
                             develop present-moment awareness, emotional regulation, and
                             inner calm through playful, age-appropriate practices.
@@ -602,8 +646,8 @@
                                 <circle cx="16" cy="16" r="1"/>
                             </svg>
                         </div>
-                        <h3>Data Science</h3>
-                        <p>
+                        <h3 data-i18n="pillars.data.title">Data Science</h3>
+                        <p data-i18n="pillars.data.desc">
                             PhD in Computer Science with expertise in machine learning and AI.
                             Bringing analytical thinking and research rigor to understanding
                             patterns in data and human behavior.
@@ -615,23 +659,23 @@
 
         <!-- Quote Section -->
         <section class="quote-section">
-            <blockquote class="quote">
+            <blockquote class="quote" data-i18n="quote.text">
                 "For me, yoga transcends the mat; it is a union with my true self.
                 Whether engaging in a physical Warrior Pose or tapping into my inner
                 spiritual warrior, yoga helps me connect with my emotions, thoughts, and body."
             </blockquote>
-            <p class="quote-author">— Surbhi Kakar</p>
+            <p class="quote-author" data-i18n="quote.author">— Surbhi Kakar</p>
         </section>
 
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
-                <h2>Start Your Mindfulness Journey</h2>
-                <p>
+                <h2 data-i18n="cta.title">Start Your Mindfulness Journey</h2>
+                <p data-i18n="cta.text">
                     Whether you're seeking yoga classes, mindfulness training for your child,
                     or simply want to learn more about living mindfully, I'm here to guide you.
                 </p>
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="contact.html" class="btn btn-primary" data-i18n="cta.button">Get in Touch</a>
             </div>
         </section>
     </main>
@@ -639,16 +683,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Navigation</h4>
+                <h4 data-i18n="footer.navigation">Navigation</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="mindfulness-program-h1-2026.html">Mindfulness Programs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="mindfulness-program-h1-2026.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Connect</h4>
+                <h4 data-i18n="footer.connect">Connect</h4>
                 <ul>
                     <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
                     <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -656,18 +700,19 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Location</h4>
-                <p style="font-size: 0.9rem; opacity: 0.8;">
+                <h4 data-i18n="footer.location">Location</h4>
+                <p style="font-size: 0.9rem; opacity: 0.8;" data-i18n="footer.location.text">
                     Amstelveen / Amsterdam<br>
                     The Netherlands
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Surbhi Kakar. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Surbhi Kakar. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script>
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
