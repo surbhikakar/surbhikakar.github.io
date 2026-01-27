@@ -15,6 +15,12 @@
 
     <title>About | Surbhi Kakar</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +50,7 @@
             "hasCredential": [
                 {
                     "@type": "EducationalOccupationalCredential",
-                    "name": "Certified Mindfulness Children Trainer",
+                    "name": "Mindfulness Children Trainer (in training)",
                     "credentialCategory": "Certificate"
                 }
             ],
@@ -318,63 +324,20 @@
             line-height: 1.6;
         }
 
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-            margin-top: 2rem;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background-color: var(--light-beige);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2rem;
-            top: 0.5rem;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: var(--olive-green);
-            border: 2px solid var(--white);
-        }
-
-        .timeline-year {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--olive-green);
-            margin-bottom: 0.25rem;
-        }
-
-        .timeline-title {
-            font-weight: 500;
-            color: var(--dark-brown);
-            margin-bottom: 0.25rem;
-        }
-
-        .timeline-desc {
-            font-size: 0.9rem;
-            color: var(--muted-brown);
-            margin: 0;
-        }
-
         /* Credentials Section */
         .credentials-section {
             background-color: var(--warm-off-white);
+        }
+
+        .credentials-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .credentials-content p {
+            color: var(--muted-brown);
+            font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         .credentials-grid {
@@ -648,83 +611,65 @@
                     <div class="journey-content">
                         <h2 data-i18n="about.yoga.title">My Yoga Journey</h2>
                         <p data-i18n="about.yoga.p1">
-                            My relationship with yoga began in India in 2017, where I first discovered
-                            its transformative power. What started as a physical practice soon became
-                            a profound journey of self-discovery and inner connection.
+                            Growing up in India, yoga's roots were woven into my cultural fabric long
+                            before I stepped onto a mat. But it wasn't until I encountered a transformative
+                            teacher that I truly understood yoga's power. In her class, I discovered
+                            something profound: I am more than my thoughts.
                         </p>
                         <p data-i18n="about.yoga.p2">
-                            In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands,
-                            deepening my understanding and commitment to sharing this ancient wisdom with others.
-                            Today, I teach both Hatha and Vinyasa yoga, guiding students toward finding their
-                            own connection between breath, body, and consciousness.
+                            By anchoring into my body, I found joy existing in the present moment—even
+                            while my mind churned with worries and to-do lists. That discovery changed everything.
                         </p>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-year">2017</div>
-                                <div class="timeline-title" data-i18n="about.yoga.timeline.2017">Began yoga practice in India</div>
-                                <div class="timeline-desc" data-i18n="about.yoga.timeline.2017.desc">First steps on the yogic path</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-year">2024</div>
-                                <div class="timeline-title" data-i18n="about.yoga.timeline.2024">Yoga Teacher Training</div>
-                                <div class="timeline-desc" data-i18n="about.yoga.timeline.2024.desc">Certified at Yoga Minds, Netherlands</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-year" data-i18n="about.yoga.timeline.present">Present</div>
-                                <div class="timeline-title" data-i18n="about.yoga.timeline.present">Teaching Hatha & Vinyasa</div>
-                                <div class="timeline-desc" data-i18n="about.yoga.timeline.present.desc">Yoga Teacher at Yoga Minds</div>
-                            </div>
-                        </div>
+                        <p data-i18n="about.yoga.p3">
+                            In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands,
+                            deepening both my practice and my commitment to sharing this ancient wisdom.
+                            Today, I teach Hatha and Vinyasa yoga, guiding students to discover their own
+                            connection between breath, body, and awareness—the same revelation that
+                            transformed my life.
+                        </p>
                     </div>
                     <div class="journey-highlight">
                         <p data-i18n="about.yoga.quote">
-                            "For me, yoga transcends the mat; it is a union with my true self.
-                            Whether I'm engaging in a physical Virabhadrasana (Warrior Pose)
-                            or tapping into my inner spiritual warrior, yoga helps me connect
-                            with my emotions, thoughts, and body."
+                            "I am more than my thoughts. By anchoring into my body, I found joy
+                            existing in the present moment—even while my mind churned with worries
+                            and to-do lists."
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Mindfulness Training Section -->
+        <!-- Mindfulness Journey Section -->
         <section class="journey-section" style="background-color: var(--warm-off-white);">
             <div class="container">
                 <div class="journey-grid">
                     <div class="journey-highlight" style="background-color: var(--white);">
                         <p data-i18n="about.mindfulness.quote">
-                            "Teaching mindfulness to children is about meeting them where they are—
-                            using playful activities, stories, and gentle awareness practices to help
-                            them develop skills that will serve them throughout their lives."
+                            "Children's minds are like fresh soil. When we plant seeds of mindfulness
+                            and kindness early, they grow into adults who accept themselves fully,
+                            express themselves authentically, and create harmony within themselves
+                            and in the world around them."
                         </p>
                     </div>
                     <div class="journey-content">
-                        <h2 data-i18n="about.mindfulness.title">Mindfulness Training</h2>
+                        <h2 data-i18n="about.mindfulness.title">My Mindfulness Journey</h2>
                         <p data-i18n="about.mindfulness.p1">
-                            My passion for mindfulness led me to complete Eline Snel's renowned
-                            <a href="https://www.elinesnel.com/en/course-to-become-a-mindfulness-children-trainer/" target="_blank" rel="noopener">
-                            Course to become a mindfulness children trainer</a>. This certification
-                            equipped me with specialized techniques for teaching present-moment
-                            awareness to young minds.
+                            My path to mindfulness began in 2019 when I discovered the teachings of
+                            Vietnamese monk Thich Nhat Hanh. What resonated deeply with me was his
+                            vision of "engaged mindfulness"—a practice that extends beyond the meditation
+                            cushion into meaningful action in the world. His teachings inspired me to
+                            share this gift with others, particularly children.
                         </p>
                         <p data-i18n="about.mindfulness.p2">
-                            Since October 2025, I've been working as a Mindfulness Trainer for Children
-                            at the Academy for Mindful Teaching, helping children ages 5-11 develop
-                            essential life skills through playful, age-appropriate practices.
+                            In today's world, constant busyness has become a badge of honor—a marker
+                            of success. Yet this relentless pace disconnects us from our bodies and
+                            emotions, leaving us ungrounded. I've witnessed how vital it is to understand
+                            and navigate our emotions, and how much more powerful this skill becomes
+                            when cultivated early.
                         </p>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-year">2025</div>
-                                <div class="timeline-title" data-i18n="about.mindfulness.timeline.2025">Eline Snel Certification</div>
-                                <div class="timeline-desc" data-i18n="about.mindfulness.timeline.2025.desc">Mindfulness Children Trainer course</div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-year">Oct 2025</div>
-                                <div class="timeline-title" data-i18n="about.mindfulness.timeline.oct2025">Academy for Mindful Teaching</div>
-                                <div class="timeline-desc" data-i18n="about.mindfulness.timeline.oct2025.desc">Mindfulness Trainer for Children</div>
-                            </div>
-                        </div>
+                        <p data-i18n="about.mindfulness.p3">
+                            This vision drives my work with children today.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -735,58 +680,24 @@
             <div class="container">
                 <div class="section-header">
                     <h2 data-i18n="about.credentials.title">Professional Background</h2>
-                    <p data-i18n="about.credentials.subtitle">Bridging technology, research, and holistic well-being</p>
                 </div>
-                <div class="credentials-grid">
-                    <div class="credential-card">
-                        <h3 data-i18n="about.education.title">Education</h3>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.education.phd">PhD in Computer Science</div>
-                            <div class="credential-detail" data-i18n="about.education.phd.detail">Jamia Millia Islamia, 2017-2023</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.education.mca">MCA (Master of Computer Applications)</div>
-                            <div class="credential-detail" data-i18n="about.education.mca.detail">IP University, 2008-2011</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.education.bsc">BSc (Hons) Computer Science</div>
-                            <div class="credential-detail" data-i18n="about.education.bsc.detail">Delhi University, 2004-2007</div>
-                        </div>
-                    </div>
-                    <div class="credential-card">
-                        <h3 data-i18n="about.roles.title">Current Roles</h3>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.roles.ds">Data Scientist</div>
-                            <div class="credential-detail" data-i18n="about.roles.ds.detail">Rabobank, Dec 2022 - Present</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.roles.yoga">Yoga Teacher</div>
-                            <div class="credential-detail" data-i18n="about.roles.yoga.detail">Yoga Minds, Aug 2024 - Present</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.roles.mindfulness">Mindfulness Trainer for Children</div>
-                            <div class="credential-detail" data-i18n="about.roles.mindfulness.detail">Academy for Mindful Teaching, Oct 2025 - Present</div>
-                        </div>
-                    </div>
-                    <div class="credential-card">
-                        <h3 data-i18n="about.experience.title">Previous Experience</h3>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.experience.ebay">eBay</div>
-                            <div class="credential-detail" data-i18n="about.experience.ebay.detail">Software Development</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.experience.onexillium">OneXillium</div>
-                            <div class="credential-detail" data-i18n="about.experience.onexillium.detail">Technology Solutions</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.experience.cvent">Cvent</div>
-                            <div class="credential-detail" data-i18n="about.experience.cvent.detail">Software Development</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="credential-name" data-i18n="about.experience.professor">Assistant Professor</div>
-                            <div class="credential-detail" data-i18n="about.experience.professor.detail">Academic Teaching</div>
-                        </div>
-                    </div>
+                <div class="credentials-content">
+                    <p data-i18n="about.credentials.p1">
+                        My professional journey has been anything but linear and that's exactly what makes
+                        my approach unique. I've nurtured young minds as an Assistant Professor, earned a
+                        PhD in Computer Science, and applied analytical thinking as a Data Scientist solving
+                        complex challenges in banking and retail. I've also authored "The Dancing Leaf," a
+                        contemplative work exploring nature, mindfulness, and the quiet wisdom found in
+                        observing the world around us.
+                    </p>
+                    <p data-i18n="about.credentials.p2">
+                        Today, these seemingly disparate paths converge in my work as a yoga teacher and
+                        mindfulness trainer in training. I'm trained with the Academy for Mindful Teaching,
+                        based on the internationally recognized Eline Snel Method (The Frog), which is already
+                        implemented in several schools in the Netherlands and abroad. As part of my training,
+                        I'm offering a supervised pilot program for children aged 5-8 and 8-11, with ongoing
+                        guidance and oversight from the Academy for Mindful Teaching.
+                    </p>
                 </div>
             </div>
         </section>
@@ -848,11 +759,11 @@
                     </div>
                     <div class="volunteer-card">
                         <h4 data-i18n="about.volunteering.un.title">UN Volunteers</h4>
-                        <p data-i18n="about.volunteering.un.desc">Authoring Java programming courses, making technology education accessible globally.</p>
+                        <p data-i18n="about.volunteering.un.desc">Authored Java programming courses, making technology education accessible globally.</p>
                     </div>
                     <div class="volunteer-card">
                         <h4 data-i18n="about.volunteering.landmark.title">Landmark</h4>
-                        <p data-i18n="about.volunteering.landmark.desc">Life coaching and personal development, helping others discover their potential.</p>
+                        <p data-i18n="about.volunteering.landmark.desc">Provided life coaching and personal development, helping others discover their potential.</p>
                     </div>
                 </div>
             </div>
@@ -875,7 +786,7 @@
                 <ul>
                     <li><a href="mailto:hello@surbhikakar.com">hello@surbhikakar.com</a></li>
                     <li><a href="https://www.linkedin.com/in/surbhi-kakar-6141b917/" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://www.yogaminds.nl" target="_blank" rel="noopener">Yoga Minds</a></li>
+                    <li><a href="https://yoga-minds.nl/surbhi-kakar" target="_blank" rel="noopener">Yoga Minds</a></li>
                 </ul>
             </div>
             <div class="footer-section">

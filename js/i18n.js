@@ -19,7 +19,7 @@ const translations = {
         "pillars.yoga.title": "Yoga",
         "pillars.yoga.desc": "Teaching Hatha and Vinyasa yoga with a focus on connecting body, breath, and mind. Yoga is more than physical practice—it's a path to inner awareness and balance.",
         "pillars.mindfulness.title": "Mindfulness",
-        "pillars.mindfulness.desc": "Certified mindfulness trainer for children, helping young minds develop present-moment awareness, emotional regulation, and inner calm through playful, age-appropriate practices.",
+        "pillars.mindfulness.desc": "Mindfulness trainer for children, helping young minds develop present-moment awareness, emotional regulation, and inner calm through playful, age-appropriate practices.",
         "pillars.data.title": "Data Science",
         "pillars.data.desc": "PhD in Computer Science with expertise in machine learning and AI. Bringing analytical thinking and research rigor to understanding patterns in data and human behavior.",
 
@@ -42,9 +42,10 @@ const translations = {
         "about.subtitle": "A journey of connecting body, mind, and purpose through yoga, mindfulness, and analytical thinking.",
 
         "about.yoga.title": "My Yoga Journey",
-        "about.yoga.p1": "My relationship with yoga began in India in 2017, where I first discovered its transformative power. What started as a physical practice soon became a profound journey of self-discovery and inner connection.",
-        "about.yoga.p2": "In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands, deepening my understanding and commitment to sharing this ancient wisdom with others. Today, I teach both Hatha and Vinyasa yoga, guiding students toward finding their own connection between breath, body, and consciousness.",
-        "about.yoga.quote": "\"For me, yoga transcends the mat; it is a union with my true self. Whether I'm engaging in a physical Virabhadrasana (Warrior Pose) or tapping into my inner spiritual warrior, yoga helps me connect with my emotions, thoughts, and body.\"",
+        "about.yoga.p1": "Growing up in India, yoga's roots were woven into my cultural fabric long before I stepped onto a mat. But it wasn't until I encountered a transformative teacher that I truly understood yoga's power. In her class, I discovered something profound: I am more than my thoughts.",
+        "about.yoga.p2": "By anchoring into my body, I found joy existing in the present moment—even while my mind churned with worries and to-do lists. That discovery changed everything.",
+        "about.yoga.p3": "In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands, deepening both my practice and my commitment to sharing this ancient wisdom. Today, I teach Hatha and Vinyasa yoga, guiding students to discover their own connection between breath, body, and awareness—the same revelation that transformed my life.",
+        "about.yoga.quote": "\"I am more than my thoughts. By anchoring into my body, I found joy existing in the present moment—even while my mind churned with worries and to-do lists.\"",
 
         "about.yoga.timeline.2017": "Began yoga practice in India",
         "about.yoga.timeline.2017.desc": "First steps on the yogic path",
@@ -53,10 +54,11 @@ const translations = {
         "about.yoga.timeline.present": "Teaching Hatha & Vinyasa",
         "about.yoga.timeline.present.desc": "Yoga Teacher at Yoga Minds",
 
-        "about.mindfulness.title": "Mindfulness Training",
-        "about.mindfulness.p1": "My passion for mindfulness led me to complete Eline Snel's renowned Course to become a mindfulness children trainer. This certification equipped me with specialized techniques for teaching present-moment awareness to young minds.",
-        "about.mindfulness.p2": "Since October 2025, I've been working as a Mindfulness Trainer for Children at the Academy for Mindful Teaching, helping children ages 5-11 develop essential life skills through playful, age-appropriate practices.",
-        "about.mindfulness.quote": "\"Teaching mindfulness to children is about meeting them where they are— using playful activities, stories, and gentle awareness practices to help them develop skills that will serve them throughout their lives.\"",
+        "about.mindfulness.title": "My Mindfulness Journey",
+        "about.mindfulness.p1": "My path to mindfulness began in 2019 when I discovered the teachings of Vietnamese monk Thich Nhat Hanh. What resonated deeply with me was his vision of \"engaged mindfulness\"—a practice that extends beyond the meditation cushion into meaningful action in the world. His teachings inspired me to share this gift with others, particularly children.",
+        "about.mindfulness.p2": "In today's world, constant busyness has become a badge of honor—a marker of success. Yet this relentless pace disconnects us from our bodies and emotions, leaving us ungrounded. I've witnessed how vital it is to understand and navigate our emotions, and how much more powerful this skill becomes when cultivated early.",
+        "about.mindfulness.p3": "This vision drives my work with children today.",
+        "about.mindfulness.quote": "\"Children's minds are like fresh soil. When we plant seeds of mindfulness and kindness early, they grow into adults who accept themselves fully, express themselves authentically, and create harmony within themselves and in the world around them.\"",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certification",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Children Trainer course",
@@ -64,7 +66,8 @@ const translations = {
         "about.mindfulness.timeline.oct2025.desc": "Mindfulness Trainer for Children",
 
         "about.credentials.title": "Professional Background",
-        "about.credentials.subtitle": "Bridging technology, research, and holistic well-being",
+        "about.credentials.p1": "My professional journey has been anything but linear and that's exactly what makes my approach unique. I've nurtured young minds as an Assistant Professor, earned a PhD in Computer Science, and applied analytical thinking as a Data Scientist solving complex challenges in banking and retail. I've also authored \"The Dancing Leaf,\" a contemplative work exploring nature, mindfulness, and the quiet wisdom found in observing the world around us.",
+        "about.credentials.p2": "Today, these seemingly disparate paths converge in my work as a yoga teacher and mindfulness trainer in training. I'm trained with the Academy for Mindful Teaching, based on the internationally recognized Eline Snel Method (The Frog), which is already implemented in several schools in the Netherlands and abroad. As part of my training, I'm offering a supervised pilot program for children aged 5-8 and 8-11, with ongoing guidance and oversight from the Academy for Mindful Teaching.",
 
         "about.education.title": "Education",
         "about.education.phd": "PhD in Computer Science",
@@ -79,7 +82,7 @@ const translations = {
         "about.roles.ds.detail": "Rabobank, Dec 2022 - Present",
         "about.roles.yoga": "Yoga Teacher",
         "about.roles.yoga.detail": "Yoga Minds, Aug 2024 - Present",
-        "about.roles.mindfulness": "Mindfulness Trainer for Children",
+        "about.roles.mindfulness": "Mindfulness Trainer for Children (in training)",
         "about.roles.mindfulness.detail": "Academy for Mindful Teaching, Oct 2025 - Present",
 
         "about.experience.title": "Previous Experience",
@@ -114,9 +117,9 @@ const translations = {
         "about.volunteering.fruittuin.title": "Fruittuin Van West",
         "about.volunteering.fruittuin.desc": "Environmental volunteering, connecting with nature and supporting sustainable urban agriculture.",
         "about.volunteering.un.title": "UN Volunteers",
-        "about.volunteering.un.desc": "Authoring Java programming courses, making technology education accessible globally.",
+        "about.volunteering.un.desc": "Authored Java programming courses, making technology education accessible globally.",
         "about.volunteering.landmark.title": "Landmark",
-        "about.volunteering.landmark.desc": "Life coaching and personal development, helping others discover their potential.",
+        "about.volunteering.landmark.desc": "Provided life coaching and personal development, helping others discover their potential.",
 
         // Contact Page
         "contact.title": "Get in Touch",
@@ -226,11 +229,11 @@ const translations = {
         "programs.breath.4": "After 3 minutes, slowly open your eyes",
 
         "programs.guide.title": "Your Child's Mindfulness Guide",
-        "programs.guide.text": "These programs are taught by Surbhi Kakar, a certified mindfulness trainer who completed Eline Snel's renowned \"Course to become a mindfulness children trainer.\" Surbhi brings a unique perspective combining her training in mindfulness with her background as a yoga teacher and data scientist.",
+        "programs.guide.text": "These programs are taught by Surbhi Kakar, a mindfulness trainer in training currently enrolled in Eline Snel's renowned \"Course to become a mindfulness children trainer.\" Surbhi brings a unique perspective combining her training in mindfulness with her background as a yoga teacher and data scientist.",
         "programs.guide.academy": "Academy for Mindful Teaching",
         "programs.guide.academy.desc": "Mindfulness Trainer for Children",
         "programs.guide.snel": "Eline Snel Method",
-        "programs.guide.snel.desc": "Certified Mindfulness Children Trainer",
+        "programs.guide.snel.desc": "Mindfulness Children Trainer (in training)",
         "programs.guide.yogaminds": "Yoga Minds",
         "programs.guide.yogaminds.desc": "Certified Yoga Teacher",
 
@@ -304,7 +307,7 @@ const translations = {
         "pillars.yoga.title": "Yoga",
         "pillars.yoga.desc": "Hatha en Vinyasa yoga met focus op de verbinding tussen lichaam, adem en geest. Yoga is meer dan fysieke oefening—het is een pad naar innerlijk bewustzijn en balans.",
         "pillars.mindfulness.title": "Mindfulness",
-        "pillars.mindfulness.desc": "Gecertificeerd mindfulness trainer voor kinderen, die jonge geesten helpt bij het ontwikkelen van bewustzijn in het moment, emotieregulatie en innerlijke rust door speelse, leeftijdsgeschikte oefeningen.",
+        "pillars.mindfulness.desc": "Mindfulness trainer voor kinderen, die jonge geesten helpt bij het ontwikkelen van bewustzijn in het moment, emotieregulatie en innerlijke rust door speelse, leeftijdsgeschikte oefeningen.",
         "pillars.data.title": "Data Science",
         "pillars.data.desc": "PhD in Informatica met expertise in machine learning en AI. Analytisch denken en onderzoeksnauwkeurigheid toepassen om patronen in data en menselijk gedrag te begrijpen.",
 
@@ -327,9 +330,10 @@ const translations = {
         "about.subtitle": "Een reis van verbinding tussen lichaam, geest en doel door yoga, mindfulness en analytisch denken.",
 
         "about.yoga.title": "Mijn Yoga Reis",
-        "about.yoga.p1": "Mijn relatie met yoga begon in India in 2017, waar ik voor het eerst de transformerende kracht ontdekte. Wat begon als een fysieke oefening werd al snel een diepgaande reis van zelfontdekking en innerlijke verbinding.",
-        "about.yoga.p2": "In 2024 voltooide ik mijn Yoga Docentenopleiding bij Yoga Minds in Nederland, waardoor mijn begrip en toewijding om deze oude wijsheid met anderen te delen werd verdiept. Vandaag geef ik zowel Hatha als Vinyasa yoga les.",
-        "about.yoga.quote": "\"Voor mij overstijgt yoga de mat; het is een verbinding met mijn ware zelf. Of ik nu een fysieke Virabhadrasana (Warrior Pose) doe of mijn innerlijke spirituele krijger aanraak, yoga helpt me verbinden met mijn emoties, gedachten en lichaam.\"",
+        "about.yoga.p1": "Opgroeiend in India waren de wortels van yoga verweven met mijn culturele achtergrond lang voordat ik op een mat stapte. Maar pas toen ik een transformerende leraar ontmoette, begreep ik echt de kracht van yoga. In haar les ontdekte ik iets diepgaands: ik ben meer dan mijn gedachten.",
+        "about.yoga.p2": "Door te verankeren in mijn lichaam, vond ik vreugde in het huidige moment—zelfs terwijl mijn hoofd vol zat met zorgen en to-do lijstjes. Die ontdekking veranderde alles.",
+        "about.yoga.p3": "In 2024 voltooide ik mijn Yoga Docentenopleiding bij Yoga Minds in Nederland, waardoor zowel mijn beoefening als mijn toewijding om deze oude wijsheid te delen werd verdiept. Vandaag geef ik Hatha en Vinyasa yoga les, waarbij ik studenten begeleid om hun eigen verbinding tussen adem, lichaam en bewustzijn te ontdekken—dezelfde openbaring die mijn leven transformeerde.",
+        "about.yoga.quote": "\"Ik ben meer dan mijn gedachten. Door te verankeren in mijn lichaam, vond ik vreugde in het huidige moment—zelfs terwijl mijn hoofd vol zat met zorgen en to-do lijstjes.\"",
 
         "about.yoga.timeline.2017": "Begonnen met yoga in India",
         "about.yoga.timeline.2017.desc": "Eerste stappen op het yogapad",
@@ -338,10 +342,11 @@ const translations = {
         "about.yoga.timeline.present": "Hatha & Vinyasa Lessen",
         "about.yoga.timeline.present.desc": "Yogadocent bij Yoga Minds",
 
-        "about.mindfulness.title": "Mindfulness Training",
-        "about.mindfulness.p1": "Mijn passie voor mindfulness leidde ertoe dat ik de gerenommeerde cursus van Eline Snel voltooide om mindfulness kindtrainer te worden. Deze certificering gaf me gespecialiseerde technieken voor het onderwijzen van bewustzijn in het moment aan jonge geesten.",
-        "about.mindfulness.p2": "Sinds oktober 2025 werk ik als Mindfulness Trainer voor Kinderen bij de Academie voor Mindful Lesgeven, waar ik kinderen van 5-11 jaar help essentiële levensvaardigheden te ontwikkelen.",
-        "about.mindfulness.quote": "\"Mindfulness onderwijzen aan kinderen gaat over hen ontmoeten waar ze zijn— met behulp van speelse activiteiten, verhalen en zachte bewustzijnsoefeningen om hen te helpen vaardigheden te ontwikkelen die hen hun hele leven zullen dienen.\"",
+        "about.mindfulness.title": "Mijn Mindfulness Reis",
+        "about.mindfulness.p1": "Mijn pad naar mindfulness begon in 2019 toen ik de leringen van de Vietnamese monnik Thich Nhat Hanh ontdekte. Wat diep bij me resoneerde was zijn visie op \"geëngageerde mindfulness\"—een praktijk die verder reikt dan het meditatiekussen naar betekenisvolle actie in de wereld. Zijn leringen inspireerden me om dit geschenk met anderen te delen, vooral met kinderen.",
+        "about.mindfulness.p2": "In de wereld van vandaag is constante drukte een ereteken geworden—een teken van succes. Toch ontkoppelt dit meedogenloze tempo ons van ons lichaam en onze emoties, waardoor we ongegrond raken. Ik heb gezien hoe essentieel het is om onze emoties te begrijpen en te navigeren, en hoeveel krachtiger deze vaardigheid wordt wanneer deze vroeg wordt gecultiveerd.",
+        "about.mindfulness.p3": "Deze visie drijft mijn werk met kinderen vandaag.",
+        "about.mindfulness.quote": "\"De geesten van kinderen zijn als verse aarde. Wanneer we vroeg zaden van mindfulness en vriendelijkheid planten, groeien ze uit tot volwassenen die zichzelf volledig accepteren, zich authentiek uitdrukken en harmonie creëren in zichzelf en in de wereld om hen heen.\"",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certificering",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Kindtrainer cursus",
@@ -349,7 +354,8 @@ const translations = {
         "about.mindfulness.timeline.oct2025.desc": "Mindfulness Trainer voor Kinderen",
 
         "about.credentials.title": "Professionele Achtergrond",
-        "about.credentials.subtitle": "Verbinding tussen technologie, onderzoek en holistisch welzijn",
+        "about.credentials.p1": "Mijn professionele reis is allesbehalve lineair geweest en dat is precies wat mijn aanpak uniek maakt. Ik heb jonge geesten gekoesterd als Universitair Docent, een PhD in Informatica behaald, en analytisch denken toegepast als Data Scientist bij het oplossen van complexe uitdagingen in het bankwezen en de retail. Ik heb ook \"The Dancing Leaf\" geschreven, een contemplatief werk dat natuur, mindfulness en de stille wijsheid verkent die te vinden is in het observeren van de wereld om ons heen.",
+        "about.credentials.p2": "Vandaag komen deze schijnbaar ongelijksoortige paden samen in mijn werk als yogadocent en mindfulness trainer in opleiding. Ik word opgeleid bij de Academie voor Mindful Lesgeven, gebaseerd op de internationaal erkende Eline Snel Methode (De Kikker), die al wordt toegepast in verschillende scholen in Nederland en daarbuiten. Als onderdeel van mijn opleiding bied ik een begeleid pilotprogramma aan voor kinderen van 5-8 en 8-11 jaar, met voortdurende begeleiding en toezicht van de Academie voor Mindful Lesgeven.",
 
         "about.education.title": "Opleiding",
         "about.education.phd": "PhD Informatica",
@@ -364,7 +370,7 @@ const translations = {
         "about.roles.ds.detail": "Rabobank, dec 2022 - heden",
         "about.roles.yoga": "Yogadocent",
         "about.roles.yoga.detail": "Yoga Minds, aug 2024 - heden",
-        "about.roles.mindfulness": "Mindfulness Trainer voor Kinderen",
+        "about.roles.mindfulness": "Mindfulness Trainer voor Kinderen (in opleiding)",
         "about.roles.mindfulness.detail": "Academie voor Mindful Lesgeven, okt 2025 - heden",
 
         "about.experience.title": "Eerdere Ervaring",
@@ -399,9 +405,9 @@ const translations = {
         "about.volunteering.fruittuin.title": "Fruittuin Van West",
         "about.volunteering.fruittuin.desc": "Milieuvrijwilligerswerk, verbinden met de natuur en ondersteunen van duurzame stadslandbouw.",
         "about.volunteering.un.title": "UN Volunteers",
-        "about.volunteering.un.desc": "Schrijven van Java programmeercursussen, technologie-educatie wereldwijd toegankelijk maken.",
+        "about.volunteering.un.desc": "Java programmeercursussen geschreven, technologie-educatie wereldwijd toegankelijk gemaakt.",
         "about.volunteering.landmark.title": "Landmark",
-        "about.volunteering.landmark.desc": "Life coaching en persoonlijke ontwikkeling, anderen helpen hun potentieel te ontdekken.",
+        "about.volunteering.landmark.desc": "Life coaching en persoonlijke ontwikkeling gegeven, anderen geholpen hun potentieel te ontdekken.",
 
         // Contact Page
         "contact.title": "Neem Contact Op",
@@ -511,11 +517,11 @@ const translations = {
         "programs.breath.4": "Open na 3 minuten langzaam je ogen",
 
         "programs.guide.title": "De Mindfulness Gids van Je Kind",
-        "programs.guide.text": "Deze programma's worden gegeven door Surbhi Kakar, een gecertificeerd mindfulness trainer die de gerenommeerde cursus van Eline Snel heeft voltooid. Surbhi brengt een uniek perspectief dat haar mindfulness training combineert met haar achtergrond als yogadocent en data scientist.",
+        "programs.guide.text": "Deze programma's worden gegeven door Surbhi Kakar, een mindfulness trainer in opleiding die momenteel de gerenommeerde cursus van Eline Snel volgt. Surbhi brengt een uniek perspectief dat haar mindfulness training combineert met haar achtergrond als yogadocent en data scientist.",
         "programs.guide.academy": "Academie voor Mindful Lesgeven",
         "programs.guide.academy.desc": "Mindfulness Trainer voor Kinderen",
         "programs.guide.snel": "Eline Snel Methode",
-        "programs.guide.snel.desc": "Gecertificeerd Mindfulness Kindtrainer",
+        "programs.guide.snel.desc": "Mindfulness Kindtrainer (in opleiding)",
         "programs.guide.yogaminds": "Yoga Minds",
         "programs.guide.yogaminds.desc": "Gecertificeerd Yogadocent",
 
