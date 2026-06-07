@@ -1,2 +1,11 @@
 .DS_STORE
 ./**.DS_STORE
+**/node_modules
+
+# Private / internal files - never publish (public GitHub Pages repo)
+surbhi_resume.pdf
+task.md
+task_better.md
+*.pptx
+*.docx
+flyers/

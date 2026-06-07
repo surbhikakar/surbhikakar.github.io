@@ -67,7 +67,7 @@ const translations = {
 
         "about.credentials.title": "Professional Background",
         "about.credentials.p1": "My professional journey has been anything but linear and that's exactly what makes my approach unique. I've nurtured young minds as an Assistant Professor, earned a PhD in Computer Science, and applied analytical thinking as a Data Scientist solving complex challenges in banking and retail. I've also authored \"The Dancing Leaf,\" a contemplative work exploring nature, mindfulness, and the quiet wisdom found in observing the world around us.",
-        "about.credentials.p2": "Today, these seemingly disparate paths converge in my work as a yoga teacher and mindfulness trainer in training. I'm trained with the Academy for Mindful Teaching, based on the internationally recognized Eline Snel Method (The Frog), which is already implemented in several schools in the Netherlands and abroad. As part of my training, I'm offering a supervised pilot program for children aged 5-8 and 8-11, with ongoing guidance and oversight from the Academy for Mindful Teaching.",
+        "about.credentials.p2": "Today, these seemingly disparate paths converge in my work as a yoga teacher and mindfulness trainer for children and teenagers. I'm trained with the Academy for Mindful Teaching, based on the internationally recognized Eline Snel Method (The Frog), which is already implemented in several schools in the Netherlands and abroad. Having completed a supervised pilot program for children aged 5 to 12 under the guidance of the Academy for Mindful Teaching, I now offer Mindfulness Matters programs for ages 5-8 and 8-11, along with a new introductory program for teenagers aged 12-14.",
 
         "about.education.title": "Education",
         "about.education.phd": "PhD in Computer Science",
@@ -82,7 +82,7 @@ const translations = {
         "about.roles.ds.detail": "Rabobank, Dec 2022 - Present",
         "about.roles.yoga": "Yoga Teacher",
         "about.roles.yoga.detail": "Yoga Minds, Aug 2024 - Present",
-        "about.roles.mindfulness": "Mindfulness Trainer for Children (in training)",
+        "about.roles.mindfulness": "Mindfulness Trainer for Children & Teenagers",
         "about.roles.mindfulness.detail": "Academy for Mindful Teaching, Oct 2025 - Present",
 
         "about.experience.title": "Previous Experience",
@@ -140,7 +140,7 @@ const translations = {
         "contact.services.yoga.desc": "Join me for Hatha or Vinyasa yoga sessions that connect breath, body, and mind. Available through Yoga Minds in the Amsterdam area.",
         "contact.services.yoga.btn": "Learn More",
         "contact.services.mindfulness.title": "Children's Mindfulness",
-        "contact.services.mindfulness.desc": "8-week mindfulness programs designed for children ages 5-11, teaching present-moment awareness through playful activities.",
+        "contact.services.mindfulness.desc": "Mindfulness programs designed for children and teenagers ages 5-14, teaching present-moment awareness through playful, age-appropriate activities.",
         "contact.services.mindfulness.btn": "View Programs",
         "contact.services.speaking.title": "Speaking & Workshops",
         "contact.services.speaking.desc": "Available for speaking engagements, corporate wellness workshops, and educational presentations on mindfulness and well-being.",
@@ -156,9 +156,20 @@ const translations = {
         "contact.affiliations.wakeup.desc": "Mindfulness Community",
 
         // Mindfulness Programs Page
-        "programs.badge": "H1 2026 Programs",
+        "programs.badge": "Now Enrolling &bull; August 2026",
         "programs.title": "Mindfulness Matters",
-        "programs.subtitle": "8-week mindfulness programs designed to help children develop present-moment awareness, emotional understanding, and inner calm through playful, age-appropriate practices.",
+        "programs.subtitle": "Mindfulness programs designed to help children and teenagers develop present-moment awareness, emotional understanding, and inner calm through playful, age-appropriate practices.",
+
+        // Intake Announcement
+        "intake.eyebrow": "New Enrollment &bull; Programs start late August 2026",
+        "intake.title": "Come to a Free Intake",
+        "intake.date": "Saturday, 20 June 2026 &mdash; Platform C, Stadsplein 99, 1181 ZM Amstelveen",
+        "intake.time1": "Ages 5-11 &mdash; bring your child, come together",
+        "intake.time2": "Teens 12-14, just for teens &mdash; come yourself, or with a parent",
+        "intake.pricing": "Ages 5-8: &euro;175 (8 weeks) &middot; Ages 8-11: &euro;185 (8 weeks) &middot; Teens 12-14: &euro;99 introductory (10 weeks)",
+        "intake.note": "Meet the trainer &middot; Try a real practice &middot; Ask anything",
+        "intake.register": "Register for the Intake",
+        "intake.flyer": "View the Flyer",
 
         "programs.what.title": "What is Mindfulness for Children?",
         "programs.what.p1": "Mindfulness teaches children to be fully present in the moment, enabling them to understand their inner and outer world with an open and loving mind. Through playful activities, games, and gentle awareness practices, children learn to observe their thoughts, feelings, and body sensations without judgment.",
@@ -178,12 +189,16 @@ const translations = {
         "programs.our.subtitle": "Choose the program designed for your child's age group",
         "programs.tab.5-8": "Ages 5-8",
         "programs.tab.8-11": "Ages 8-11",
+        "programs.tab.12-14": "Teens 12-14",
 
         "programs.5-8.title": "Building Foundation Skills for Young Learners",
         "programs.5-8.desc": "This program introduces young children to attention training through playful activities, helping them develop body awareness and emotional understanding in age-appropriate ways with shorter activities suited for younger attention spans.",
 
         "programs.8-11.title": "Building Present-Moment Awareness in Young Minds",
         "programs.8-11.desc": "This program teaches children to be fully present in the moment, enabling them to understand their inner and outer world with an open and loving mind through age-appropriate exercises and deeper exploration.",
+
+        "programs.12-14.title": "Finding Calm and Confidence in the Teenage Years",
+        "programs.12-14.desc": "This new introductory 10-week program helps teenagers navigate school stress, social pressure, and a busy mind. Through attention training, honest conversation, and real practice, teens learn to understand their thoughts and feelings, communicate with more awareness, and above all, be themselves.",
 
         "programs.quote": "\"The present moment is the only time we truly have. Teaching children to be here, now, is one of the greatest gifts we can offer.\"",
 
@@ -228,17 +243,23 @@ const translations = {
         "programs.breath.3": "When your mind wanders, gently bring attention back to breathing",
         "programs.breath.4": "After 3 minutes, slowly open your eyes",
 
+        "programs.space.title": "Try This at Home: Three-Minute Breathing Space (Teens 12-14)",
+        "programs.space.1": "Pause whatever you're doing and ask yourself: what am I thinking and feeling right now?",
+        "programs.space.2": "Bring your full attention to your breath, following each in-breath and out-breath",
+        "programs.space.3": "Widen your attention to your whole body, including any tension or restlessness",
+        "programs.space.4": "Carry this calm, open attention into whatever you do next",
+
         "programs.guide.title": "Your Child's Mindfulness Guide",
-        "programs.guide.text": "These programs are taught by Surbhi Kakar, a mindfulness trainer in training currently enrolled in Eline Snel's renowned \"Course to become a mindfulness children trainer.\" Surbhi brings a unique perspective combining her training in mindfulness with her background as a yoga teacher and data scientist.",
+        "programs.guide.text": "These programs are taught by Surbhi Kakar, a mindfulness trainer for children and teenagers, trained through Eline Snel's renowned \"Course to become a mindfulness children trainer.\" Surbhi brings a unique perspective combining her training in mindfulness with her background as a yoga teacher and data scientist.",
         "programs.guide.academy": "Academy for Mindful Teaching",
         "programs.guide.academy.desc": "Mindfulness Trainer for Children",
         "programs.guide.snel": "Eline Snel Method",
-        "programs.guide.snel.desc": "Mindfulness Children Trainer (in training)",
+        "programs.guide.snel.desc": "Mindfulness Children Trainer",
         "programs.guide.yogaminds": "Yoga Minds",
         "programs.guide.yogaminds.desc": "Certified Yoga Teacher",
 
         "programs.enroll.title": "Enroll Your Child",
-        "programs.enroll.text": "Interested in enrolling your child in a Mindfulness Matters program? Get in touch to learn about upcoming sessions, schedules, and how to register.",
+        "programs.enroll.text": "Interested in enrolling your child or teen in a Mindfulness Matters program? Join the free intake on Saturday 20 June 2026 at Platform C, Amstelveen, or get in touch to learn more.",
         "programs.enroll.btn": "Express Interest",
 
         // Week titles (5-8)
@@ -285,7 +306,39 @@ const translations = {
         "week.7.desc.8-11": "Children learn that kindness touches the heart directly and that awareness of unkindness is essential for creating a better world.",
         "week.8.title.8-11": "The Secret of Happiness",
         "week.8.concept.8-11": "\"Happiness comes from being fully present\"",
-        "week.8.desc.8-11": "The culminating lesson teaches children to find joy in the present moment and the wonder of simplicity—in fresh bread, a poem, a sweet smile."
+        "week.8.desc.8-11": "The culminating lesson teaches children to find joy in the present moment and the wonder of simplicity—in fresh bread, a poem, a sweet smile.",
+
+        // Week titles (Teens 12-14) - 10-week introductory program
+        "week.1.title.12-14": "Observing and Focusing",
+        "week.1.concept.12-14": "\"Being fully present, without judgments\"",
+        "week.1.desc.12-14": "Attention training begins with observing the movement of the breath. Teens learn to enter the here and now, bring calm to a head full of worries, and start observing their inner world.",
+        "week.2.title.12-14": "Out of Your Head, Into Your Body",
+        "week.2.concept.12-14": "\"Your body reacts to experiences like a barometer\"",
+        "week.2.desc.12-14": "Teens learn to shine the spotlight of attention on the body, feel where their limits lie, and pick up its signals with a calm and curious attitude—without judging.",
+        "week.3.title.12-14": "The Sense of the Senses",
+        "week.3.concept.12-14": "\"Observing in the moment, as if for the very first time\"",
+        "week.3.desc.12-14": "Teens discover the difference between direct sensory experience and the flood of judgments, stories, and expectations that the critical mind adds to it.",
+        "week.4.title.12-14": "Dealing with Longing",
+        "week.4.concept.12-14": "\"Desires are the first step towards a better world\"",
+        "week.4.desc.12-14": "Teens explore longing for things to be different and learn to deal with desires without becoming fixated, using positive inner images to strengthen self-confidence.",
+        "week.5.title.12-14": "Patience, Faith and Letting Go",
+        "week.5.concept.12-14": "\"Acceptance actually opens doors\"",
+        "week.5.desc.12-14": "Working with images from their \"movie mind,\" teens learn three key principles: patience (some things cannot be forced), faith (everything changes), and letting go of the urge to control.",
+        "week.6.title.12-14": "Communication",
+        "week.6.concept.12-14": "\"Good communication starts with listening\"",
+        "week.6.desc.12-14": "Teens practise listening as listening is meant to be: with their whole being, without judgment, saying what they really mean, and learning to reach a consensus together.",
+        "week.7.title.12-14": "Feeling Feelings",
+        "week.7.concept.12-14": "\"It's not that you are angry—you have feelings of anger\"",
+        "week.7.desc.12-14": "Anger, happiness, fear, and sadness: teens learn to notice, acknowledge, and kindly accept feelings—like weather you cannot change, but you can learn how to weather the storm.",
+        "week.8.title.12-14": "The Wondrous World of Thoughts",
+        "week.8.concept.12-14": "\"Not all the thoughts you have about yourself are true\"",
+        "week.8.desc.12-14": "Teens become familiar with their stream of thoughts, learn skills to deal with worry and disturbing thoughts, and gain more peace of mind, focus, and a more realistic self-image.",
+        "week.9.title.12-14": "Being Nice is Fun",
+        "week.9.concept.12-14": "\"Kindness is like gentle rain that falls everywhere\"",
+        "week.9.desc.12-14": "Practising kindness recalibrates the compass of the heart. Teens learn that kind words and deeds soften you, reduce prejudice and bullying, and that noticing unkindness brings you a step closer to compassion.",
+        "week.10.title.12-14": "The Secret of Happiness",
+        "week.10.concept.12-14": "\"The secret lies in consciously allowing these moments to happen\"",
+        "week.10.desc.12-14": "The closing lesson: every moment is new. Happiness can be found in little things—the wonder of simplicity—by being there with deep and undivided attention, without holding on or expecting."
     },
 
     nl: {
@@ -355,7 +408,7 @@ const translations = {
 
         "about.credentials.title": "Professionele Achtergrond",
         "about.credentials.p1": "Mijn professionele reis is allesbehalve lineair geweest en dat is precies wat mijn aanpak uniek maakt. Ik heb jonge geesten gekoesterd als Universitair Docent, een PhD in Informatica behaald, en analytisch denken toegepast als Data Scientist bij het oplossen van complexe uitdagingen in het bankwezen en de retail. Ik heb ook \"The Dancing Leaf\" geschreven, een contemplatief werk dat natuur, mindfulness en de stille wijsheid verkent die te vinden is in het observeren van de wereld om ons heen.",
-        "about.credentials.p2": "Vandaag komen deze schijnbaar ongelijksoortige paden samen in mijn werk als yogadocent en mindfulness trainer in opleiding. Ik word opgeleid bij de Academie voor Mindful Lesgeven, gebaseerd op de internationaal erkende Eline Snel Methode (De Kikker), die al wordt toegepast in verschillende scholen in Nederland en daarbuiten. Als onderdeel van mijn opleiding bied ik een begeleid pilotprogramma aan voor kinderen van 5-8 en 8-11 jaar, met voortdurende begeleiding en toezicht van de Academie voor Mindful Lesgeven.",
+        "about.credentials.p2": "Vandaag komen deze schijnbaar ongelijksoortige paden samen in mijn werk als yogadocent en mindfulness trainer voor kinderen en tieners. Ik ben opgeleid bij de Academie voor Mindful Lesgeven, gebaseerd op de internationaal erkende Eline Snel Methode (De Kikker), die al wordt toegepast in verschillende scholen in Nederland en daarbuiten. Na het afronden van een begeleid pilotprogramma voor kinderen van 5 tot 12 jaar onder begeleiding van de Academie voor Mindful Lesgeven, bied ik nu Mindfulness Matters programma's aan voor 5-8 en 8-11 jaar, plus een nieuw introductieprogramma voor tieners van 12-14 jaar.",
 
         "about.education.title": "Opleiding",
         "about.education.phd": "PhD Informatica",
@@ -370,7 +423,7 @@ const translations = {
         "about.roles.ds.detail": "Rabobank, dec 2022 - heden",
         "about.roles.yoga": "Yogadocent",
         "about.roles.yoga.detail": "Yoga Minds, aug 2024 - heden",
-        "about.roles.mindfulness": "Mindfulness Trainer voor Kinderen (in opleiding)",
+        "about.roles.mindfulness": "Mindfulness Trainer voor Kinderen en Tieners",
         "about.roles.mindfulness.detail": "Academie voor Mindful Lesgeven, okt 2025 - heden",
 
         "about.experience.title": "Eerdere Ervaring",
@@ -428,7 +481,7 @@ const translations = {
         "contact.services.yoga.desc": "Doe mee met Hatha of Vinyasa yoga sessies die adem, lichaam en geest verbinden. Beschikbaar via Yoga Minds in de regio Amsterdam.",
         "contact.services.yoga.btn": "Meer Info",
         "contact.services.mindfulness.title": "Mindfulness voor Kinderen",
-        "contact.services.mindfulness.desc": "8-weekse mindfulness programma's ontworpen voor kinderen van 5-11 jaar, met bewustzijn in het moment door speelse activiteiten.",
+        "contact.services.mindfulness.desc": "Mindfulness programma's ontworpen voor kinderen en tieners van 5-14 jaar, met bewustzijn in het moment door speelse, leeftijdsgeschikte activiteiten.",
         "contact.services.mindfulness.btn": "Bekijk Programma's",
         "contact.services.speaking.title": "Spreekbeurten & Workshops",
         "contact.services.speaking.desc": "Beschikbaar voor spreekbeurten, bedrijfswellness workshops en educatieve presentaties over mindfulness en welzijn.",
@@ -444,9 +497,20 @@ const translations = {
         "contact.affiliations.wakeup.desc": "Mindfulness Gemeenschap",
 
         // Mindfulness Programs Page
-        "programs.badge": "H1 2026 Programma's",
+        "programs.badge": "Nu Inschrijven &bull; Augustus 2026",
         "programs.title": "Mindfulness Matters",
-        "programs.subtitle": "8-weekse mindfulness programma's ontworpen om kinderen te helpen bewustzijn in het moment, emotioneel begrip en innerlijke rust te ontwikkelen door speelse, leeftijdsgeschikte oefeningen.",
+        "programs.subtitle": "Mindfulness programma's ontworpen om kinderen en tieners te helpen bewustzijn in het moment, emotioneel begrip en innerlijke rust te ontwikkelen door speelse, leeftijdsgeschikte oefeningen.",
+
+        // Intake Announcement
+        "intake.eyebrow": "Nieuwe Inschrijving &bull; Programma's starten eind augustus 2026",
+        "intake.title": "Kom naar een Gratis Intake",
+        "intake.date": "Zaterdag 20 juni 2026 &mdash; Platform C, Stadsplein 99, 1181 ZM Amstelveen",
+        "intake.time1": "5-11 jaar &mdash; kom samen met je kind",
+        "intake.time2": "Tieners 12-14, alleen voor tieners &mdash; kom zelf, of met een ouder",
+        "intake.pricing": "5-8 jaar: &euro;175 (8 weken) &middot; 8-11 jaar: &euro;185 (8 weken) &middot; Tieners 12-14: &euro;99 introductie (10 weken)",
+        "intake.note": "Ontmoet de trainer &middot; Doe een echte oefening &middot; Stel al je vragen",
+        "intake.register": "Meld je aan voor de Intake",
+        "intake.flyer": "Bekijk de Flyer",
 
         "programs.what.title": "Wat is Mindfulness voor Kinderen?",
         "programs.what.p1": "Mindfulness leert kinderen volledig aanwezig te zijn in het moment, waardoor ze hun innerlijke en uiterlijke wereld kunnen begrijpen met een open en liefdevol hart. Door speelse activiteiten, spelletjes en zachte bewustzijnsoefeningen leren kinderen hun gedachten, gevoelens en lichamelijke sensaties te observeren zonder oordeel.",
@@ -466,12 +530,16 @@ const translations = {
         "programs.our.subtitle": "Kies het programma ontworpen voor de leeftijdsgroep van je kind",
         "programs.tab.5-8": "5-8 jaar",
         "programs.tab.8-11": "8-11 jaar",
+        "programs.tab.12-14": "Tieners 12-14",
 
         "programs.5-8.title": "Fundamentele Vaardigheden voor Jonge Leerlingen",
         "programs.5-8.desc": "Dit programma introduceert jonge kinderen aan aandachtstraining door speelse activiteiten, waardoor ze lichaamsbewustzijn en emotioneel begrip ontwikkelen op leeftijdsgeschikte manieren.",
 
         "programs.8-11.title": "Bewustzijn in het Moment voor Jonge Geesten",
         "programs.8-11.desc": "Dit programma leert kinderen volledig aanwezig te zijn in het moment, waardoor ze hun innerlijke en uiterlijke wereld kunnen begrijpen met een open en liefdevol hart.",
+
+        "programs.12-14.title": "Rust en Zelfvertrouwen in de Tienerjaren",
+        "programs.12-14.desc": "Dit nieuwe introductieprogramma van 10 weken helpt tieners omgaan met schoolstress, sociale druk en een vol hoofd. Door aandachtstraining, eerlijke gesprekken en echte oefening leren tieners hun gedachten en gevoelens te begrijpen, bewuster te communiceren en vooral zichzelf te zijn.",
 
         "programs.quote": "\"Het huidige moment is de enige tijd die we werkelijk hebben. Kinderen leren hier en nu te zijn, is een van de grootste geschenken die we kunnen bieden.\"",
 
@@ -516,17 +584,23 @@ const translations = {
         "programs.breath.3": "Als je gedachten afdwalen, breng je aandacht zachtjes terug naar je ademhaling",
         "programs.breath.4": "Open na 3 minuten langzaam je ogen",
 
+        "programs.space.title": "Probeer Dit Thuis: Drie Minuten Ademruimte (Tieners 12-14)",
+        "programs.space.1": "Stop even met wat je doet en vraag jezelf: wat denk en voel ik nu?",
+        "programs.space.2": "Breng je volle aandacht naar je adem, volg elke in- en uitademing",
+        "programs.space.3": "Verbreed je aandacht naar je hele lichaam, ook spanning of onrust",
+        "programs.space.4": "Neem deze kalme, open aandacht mee in wat je daarna doet",
+
         "programs.guide.title": "De Mindfulness Gids van Je Kind",
-        "programs.guide.text": "Deze programma's worden gegeven door Surbhi Kakar, een mindfulness trainer in opleiding die momenteel de gerenommeerde cursus van Eline Snel volgt. Surbhi brengt een uniek perspectief dat haar mindfulness training combineert met haar achtergrond als yogadocent en data scientist.",
+        "programs.guide.text": "Deze programma's worden gegeven door Surbhi Kakar, mindfulness trainer voor kinderen en tieners, opgeleid via de gerenommeerde cursus van Eline Snel. Surbhi brengt een uniek perspectief dat haar mindfulness training combineert met haar achtergrond als yogadocent en data scientist.",
         "programs.guide.academy": "Academie voor Mindful Lesgeven",
         "programs.guide.academy.desc": "Mindfulness Trainer voor Kinderen",
         "programs.guide.snel": "Eline Snel Methode",
-        "programs.guide.snel.desc": "Mindfulness Kindtrainer (in opleiding)",
+        "programs.guide.snel.desc": "Mindfulness Kindtrainer",
         "programs.guide.yogaminds": "Yoga Minds",
         "programs.guide.yogaminds.desc": "Gecertificeerd Yogadocent",
 
         "programs.enroll.title": "Schrijf Je Kind In",
-        "programs.enroll.text": "Geïnteresseerd in het inschrijven van je kind voor een Mindfulness Matters programma? Neem contact op voor informatie over komende sessies, roosters en inschrijving.",
+        "programs.enroll.text": "Geïnteresseerd in het inschrijven van je kind of tiener voor een Mindfulness Matters programma? Kom naar de gratis intake op zaterdag 20 juni 2026 bij Platform C, Amstelveen, of neem contact op voor meer informatie.",
         "programs.enroll.btn": "Interesse Aangeven",
 
         // Week titles (5-8) - Dutch
@@ -573,7 +647,39 @@ const translations = {
         "week.7.desc.8-11": "Kinderen leren dat vriendelijkheid het hart direct raakt en dat bewustzijn van onvriendelijkheid essentieel is.",
         "week.8.title.8-11": "Het Geheim van Geluk",
         "week.8.concept.8-11": "\"Geluk komt van volledig aanwezig zijn\"",
-        "week.8.desc.8-11": "De afsluitende les leert kinderen vreugde te vinden in het huidige moment en de verwondering van eenvoud."
+        "week.8.desc.8-11": "De afsluitende les leert kinderen vreugde te vinden in het huidige moment en de verwondering van eenvoud.",
+
+        // Week titles (Tieners 12-14) - Dutch
+        "week.1.title.12-14": "Observeren en Focussen",
+        "week.1.concept.12-14": "\"Volledig aanwezig zijn, zonder oordelen\"",
+        "week.1.desc.12-14": "Aandachtstraining begint met het observeren van de adembeweging. Tieners leren in het hier en nu te komen, rust te brengen in een vol hoofd en hun innerlijke wereld te observeren.",
+        "week.2.title.12-14": "Uit je Hoofd, in je Lichaam",
+        "week.2.concept.12-14": "\"Je lichaam reageert op ervaringen als een barometer\"",
+        "week.2.desc.12-14": "Tieners leren de spotlight van hun aandacht op het lichaam te richten, te voelen waar hun grenzen liggen en signalen op te pikken met een kalme en nieuwsgierige houding—zonder oordeel.",
+        "week.3.title.12-14": "De Zin van de Zintuigen",
+        "week.3.concept.12-14": "\"Observeren in het moment, alsof het de allereerste keer is\"",
+        "week.3.desc.12-14": "Tieners ontdekken het verschil tussen directe zintuiglijke ervaring en de stroom van oordelen, verhalen en verwachtingen die de kritische geest eraan toevoegt.",
+        "week.4.title.12-14": "Omgaan met Verlangen",
+        "week.4.concept.12-14": "\"Verlangens zijn de eerste stap naar een betere wereld\"",
+        "week.4.desc.12-14": "Tieners onderzoeken het verlangen naar hoe dingen anders zouden kunnen zijn en leren met verlangens om te gaan zonder erin vast te lopen, met positieve innerlijke beelden die het zelfvertrouwen versterken.",
+        "week.5.title.12-14": "Geduld, Vertrouwen en Loslaten",
+        "week.5.concept.12-14": "\"Acceptatie opent juist deuren\"",
+        "week.5.desc.12-14": "Werkend met beelden uit hun \"filmgeest\" leren tieners drie kernprincipes: geduld (sommige dingen kun je niet forceren), vertrouwen (alles verandert) en het loslaten van de drang om te controleren.",
+        "week.6.title.12-14": "Communicatie",
+        "week.6.concept.12-14": "\"Goede communicatie begint met luisteren\"",
+        "week.6.desc.12-14": "Tieners oefenen met luisteren zoals luisteren bedoeld is: met je hele wezen, zonder oordeel, zeggen wat je werkelijk bedoelt en leren samen tot overeenstemming te komen.",
+        "week.7.title.12-14": "Gevoelens Voelen",
+        "week.7.concept.12-14": "\"Het is niet dat je boos bent—je hebt gevoelens van boosheid\"",
+        "week.7.desc.12-14": "Boosheid, blijheid, angst en verdriet: tieners leren gevoelens op te merken, te erkennen en vriendelijk te accepteren—zoals het weer dat je niet kunt veranderen, maar waar je wel mee om kunt leren gaan.",
+        "week.8.title.12-14": "De Wonderlijke Wereld van Gedachten",
+        "week.8.concept.12-14": "\"Niet alle gedachten die je over jezelf hebt zijn waar\"",
+        "week.8.desc.12-14": "Tieners raken vertrouwd met hun gedachtestroom, leren vaardigheden om met piekeren en storende gedachten om te gaan, en krijgen meer rust in hun hoofd, focus en een realistischer zelfbeeld.",
+        "week.9.title.12-14": "Aardig Zijn is Leuk",
+        "week.9.concept.12-14": "\"Vriendelijkheid is als zachte regen die overal valt\"",
+        "week.9.desc.12-14": "Vriendelijkheid oefenen herijkt het kompas van je hart. Tieners leren dat vriendelijke woorden en daden je zachter maken, vooroordelen en pesten verminderen, en dat het opmerken van onvriendelijkheid je een stap dichter bij compassie brengt.",
+        "week.10.title.12-14": "Het Geheim van Geluk",
+        "week.10.concept.12-14": "\"Het geheim ligt in het bewust toelaten van deze momenten\"",
+        "week.10.desc.12-14": "De afsluitende les: elk moment is nieuw. Geluk is te vinden in kleine dingen—de verwondering van eenvoud—door er te zijn met diepe en onverdeelde aandacht, zonder vast te houden of te verwachten."
     }
 };
 
