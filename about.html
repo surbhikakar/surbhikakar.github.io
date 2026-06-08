@@ -309,7 +309,7 @@
         }
 
         .journey-highlight {
-            background-color: var(--warm-off-white);
+            background-color: var(--light-beige);
             padding: 2rem;
             border-radius: 8px;
             border-left: 4px solid var(--olive-green);
@@ -322,6 +322,27 @@
             color: var(--dark-brown);
             margin: 0;
             line-height: 1.6;
+        }
+
+        .journey-aside {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .journey-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(72, 67, 56, 0.15);
+        }
+
+        .journey-photo-caption {
+            font-size: 0.85rem;
+            color: var(--muted-brown);
+            text-align: center;
+            margin-top: -0.75rem;
         }
 
         /* Credentials Section */
@@ -628,12 +649,15 @@
                             transformed my life.
                         </p>
                     </div>
-                    <div class="journey-highlight">
-                        <p data-i18n="about.yoga.quote">
-                            "I am more than my thoughts. By anchoring into my body, I found joy
-                            existing in the present moment, even while my mind churned with worries
-                            and to-do lists."
-                        </p>
+                    <div class="journey-aside">
+                        <img src="img/surbhi-profile.jpg" alt="Surbhi Kakar sitting by a mountain stream" class="journey-photo" width="732" height="1000" loading="lazy">
+                        <div class="journey-highlight">
+                            <p data-i18n="about.yoga.quote">
+                                "I am more than my thoughts. By anchoring into my body, I found joy
+                                existing in the present moment, even while my mind churned with worries
+                                and to-do lists."
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -643,13 +667,17 @@
         <section class="journey-section" style="background-color: var(--warm-off-white);">
             <div class="container">
                 <div class="journey-grid">
-                    <div class="journey-highlight" style="background-color: var(--white);">
-                        <p data-i18n="about.mindfulness.quote">
-                            "Children's minds are like fresh soil. When we plant seeds of mindfulness
-                            and kindness early, they grow into adults who accept themselves fully,
-                            express themselves authentically, and create harmony within themselves
-                            and in the world around them."
-                        </p>
+                    <div class="journey-aside">
+                        <img src="img/mindfulness-pilot-children.jpg" alt="Surbhi Kakar with children from a Mindfulness Matters pilot session" class="journey-photo" width="1000" height="750" loading="lazy">
+                        <p class="journey-photo-caption" data-i18n="about.mindfulness.photo.caption">With children from a Mindfulness Matters pilot session</p>
+                        <div class="journey-highlight">
+                            <p data-i18n="about.mindfulness.quote">
+                                "Children's minds are like fresh soil. When we plant seeds of mindfulness
+                                and kindness early, they grow into adults who accept themselves fully,
+                                express themselves authentically, and create harmony within themselves
+                                and in the world around them."
+                            </p>
+                        </div>
                     </div>
                     <div class="journey-content">
                         <h2 data-i18n="about.mindfulness.title">My Mindfulness Journey</h2>

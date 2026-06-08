@@ -59,6 +59,7 @@ const translations = {
         "about.mindfulness.p2": "In today's world, constant busyness has become a badge of honor, a marker of success. Yet this relentless pace disconnects us from our bodies and emotions, leaving us ungrounded. I've witnessed how vital it is to understand and navigate our emotions, and how much more powerful this skill becomes when cultivated early.",
         "about.mindfulness.p3": "This vision drives my work with children today.",
         "about.mindfulness.quote": "\"Children's minds are like fresh soil. When we plant seeds of mindfulness and kindness early, they grow into adults who accept themselves fully, express themselves authentically, and create harmony within themselves and in the world around them.\"",
+        "about.mindfulness.photo.caption": "With children from a Mindfulness Matters pilot session",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certification",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Children Trainer course",
@@ -393,6 +394,7 @@ const translations = {
         "about.mindfulness.p2": "In de wereld van vandaag is constante drukte een ereteken geworden, een teken van succes. Toch ontkoppelt dit meedogenloze tempo ons van ons lichaam en onze emoties, waardoor we ongegrond raken. Ik heb gezien hoe essentieel het is om onze emoties te begrijpen en te navigeren, en hoeveel krachtiger deze vaardigheid wordt wanneer deze vroeg wordt gecultiveerd.",
         "about.mindfulness.p3": "Deze visie drijft mijn werk met kinderen vandaag.",
         "about.mindfulness.quote": "\"De geesten van kinderen zijn als verse aarde. Wanneer we vroeg zaden van mindfulness en vriendelijkheid planten, groeien ze uit tot volwassenen die zichzelf volledig accepteren, zich authentiek uitdrukken en harmonie creëren in zichzelf en in de wereld om hen heen.\"",
+        "about.mindfulness.photo.caption": "Met kinderen van een Mindfulness Matters pilotsessie",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certificering",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Kindtrainer cursus",
