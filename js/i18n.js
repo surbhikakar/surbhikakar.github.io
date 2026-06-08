@@ -5,6 +5,7 @@ const translations = {
         "nav.home": "Home",
         "nav.about": "About",
         "nav.programs": "Mindfulness Programs",
+        "nav.gallery": "Gallery",
         "nav.contact": "Contact",
 
         // Homepage
@@ -60,6 +61,26 @@ const translations = {
         "about.mindfulness.p3": "This vision drives my work with children today.",
         "about.mindfulness.quote": "\"Children's minds are like fresh soil. When we plant seeds of mindfulness and kindness early, they grow into adults who accept themselves fully, express themselves authentically, and create harmony within themselves and in the world around them.\"",
         "about.mindfulness.photo.caption": "With children from a Mindfulness Matters pilot session",
+
+        // Gallery
+        "gallery.badge": "Mindfulness Matters",
+        "gallery.title": "Inside the Sessions",
+        "gallery.subtitle": "A glimpse into our Mindfulness Matters sessions: the space, the practice, and children discovering calm and confidence.",
+        "gallery.cap.setup": "The session room, ready to begin",
+        "gallery.cap.reading": "Reading an 'I can…' affirmation card",
+        "gallery.cap.bowl": "Affirmation cards and a bowl of treasures",
+        "gallery.cap.mat": "Settling onto the mat",
+        "gallery.cap.stretch": "Moments of reflection together",
+        "gallery.cap.breathe": "A simple reminder: breathe",
+        "gallery.cap.color": "Making kindness cards for loved ones",
+        "gallery.cap.frog": "The mindfulness frog watches over the room",
+        "gallery.cap.reflect": "A quiet moment of reflection",
+        "gallery.cap.writing": "Putting feelings into words",
+        "gallery.cta.title": "Join an Upcoming Session",
+        "gallery.cta.text": "Come to the free intake on Saturday 20 June 2026 at Platform C, Amstelveen, or get in touch to learn more.",
+        "gallery.teaser.title": "Inside the Sessions",
+        "gallery.teaser.text": "See moments from our Mindfulness Matters sessions: the space, the practice, and children discovering calm.",
+        "gallery.teaser.btn": "View the Gallery",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certification",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Children Trainer course",
@@ -340,6 +361,7 @@ const translations = {
         "nav.home": "Home",
         "nav.about": "Over Mij",
         "nav.programs": "Mindfulness Programma's",
+        "nav.gallery": "Galerij",
         "nav.contact": "Contact",
 
         // Homepage
@@ -395,6 +417,26 @@ const translations = {
         "about.mindfulness.p3": "Deze visie drijft mijn werk met kinderen vandaag.",
         "about.mindfulness.quote": "\"De geesten van kinderen zijn als verse aarde. Wanneer we vroeg zaden van mindfulness en vriendelijkheid planten, groeien ze uit tot volwassenen die zichzelf volledig accepteren, zich authentiek uitdrukken en harmonie creëren in zichzelf en in de wereld om hen heen.\"",
         "about.mindfulness.photo.caption": "Met kinderen van een Mindfulness Matters pilotsessie",
+
+        // Gallery
+        "gallery.badge": "Mindfulness Matters",
+        "gallery.title": "In de Sessies",
+        "gallery.subtitle": "Een blik in onze Mindfulness Matters sessies: de ruimte, de oefeningen en kinderen die rust en zelfvertrouwen ontdekken.",
+        "gallery.cap.setup": "De sessieruimte, klaar om te beginnen",
+        "gallery.cap.reading": "Een 'ik kan…' affirmatiekaart lezen",
+        "gallery.cap.bowl": "Affirmatiekaarten en een schaal vol schatten",
+        "gallery.cap.mat": "Plaatsnemen op de mat",
+        "gallery.cap.stretch": "Samen momenten van reflectie",
+        "gallery.cap.breathe": "Een simpele herinnering: adem",
+        "gallery.cap.color": "Vriendelijkheidskaarten maken voor dierbaren",
+        "gallery.cap.frog": "De mindfulness-kikker waakt over de ruimte",
+        "gallery.cap.reflect": "Een stil moment van reflectie",
+        "gallery.cap.writing": "Gevoelens in woorden vatten",
+        "gallery.cta.title": "Doe Mee aan een Volgende Sessie",
+        "gallery.cta.text": "Kom naar de gratis intake op zaterdag 20 juni 2026 bij Platform C, Amstelveen, of neem contact op voor meer informatie.",
+        "gallery.teaser.title": "In de Sessies",
+        "gallery.teaser.text": "Bekijk momenten uit onze Mindfulness Matters sessies: de ruimte, de oefeningen en kinderen die rust ontdekken.",
+        "gallery.teaser.btn": "Bekijk de Galerij",
 
         "about.mindfulness.timeline.2025": "Eline Snel Certificering",
         "about.mindfulness.timeline.2025.desc": "Mindfulness Kindtrainer cursus",

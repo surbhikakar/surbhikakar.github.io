@@ -950,6 +950,45 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Gallery teaser */
+        .gallery-teaser { background-color: var(--warm-off-white); }
+        .gallery-teaser .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .gallery-teaser-text h2 { color: var(--dark-brown); margin-bottom: 1rem; }
+        .gallery-teaser-text p { color: var(--muted-brown); margin-bottom: 1.5rem; }
+        .teaser-btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 4px;
+            background-color: var(--olive-green);
+            color: var(--white);
+            border: 2px solid var(--olive-green);
+            transition: all 0.3s ease;
+        }
+        .teaser-btn:hover { background-color: transparent; color: var(--olive-green); }
+        .gallery-teaser-imgs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        .gallery-teaser-imgs img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+        .gallery-teaser-imgs img:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 7; }
+        @media (max-width: 768px) {
+            .gallery-teaser .container { grid-template-columns: 1fr; gap: 2rem; }
+        }
     </style>
 </head>
 <body>
@@ -960,6 +999,7 @@
                 <li><a href="/" data-i18n="nav.home">Home</a></li>
                 <li><a href="about.html" data-i18n="nav.about">About</a></li>
                 <li><a href="mindfulness-programs.html" class="active" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
                 <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-right">
@@ -1527,6 +1567,22 @@
             </div>
         </section>
 
+        <!-- Gallery Teaser -->
+        <section class="gallery-teaser">
+            <div class="container">
+                <div class="gallery-teaser-text">
+                    <h2 data-i18n="gallery.teaser.title">Inside the Sessions</h2>
+                    <p data-i18n="gallery.teaser.text">See moments from our Mindfulness Matters sessions: the space, the practice, and children discovering calm.</p>
+                    <a href="gallery.html" class="teaser-btn" data-i18n="gallery.teaser.btn">View the Gallery</a>
+                </div>
+                <a href="gallery.html" class="gallery-teaser-imgs" aria-label="View the gallery">
+                    <img src="img/gallery/gallery-room-setup.jpg" alt="Session room set up with mats and cushions" loading="lazy">
+                    <img src="img/gallery/gallery-affirmation-bowl.jpg" alt="Affirmation cards and a bowl of treasures" loading="lazy">
+                    <img src="img/gallery/gallery-frog-altar.jpg" alt="A mindfulness frog and flowers in the room" loading="lazy">
+                </a>
+            </div>
+        </section>
+
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
@@ -1552,6 +1608,7 @@
                     <li><a href="/" data-i18n="nav.home">Home</a></li>
                     <li><a href="about.html" data-i18n="nav.about">About</a></li>
                     <li><a href="mindfulness-programs.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
+                    <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
                     <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>

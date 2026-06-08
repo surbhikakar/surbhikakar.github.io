@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Surbhi Kakar's journey as a Yoga Teacher, Mindfulness Trainer, and Data Scientist. Discover her path from India to Amstelveen, her qualifications, and her passion for holistic well-being.">
-    <meta name="keywords" content="Surbhi Kakar, yoga journey, mindfulness training, data scientist, PhD computer science, Eline Snel, yoga minds, author">
+    <meta name="description" content="Photo gallery from Surbhi Kakar's Mindfulness Matters sessions for children and teenagers in Amstelveen: the space, the practice, and moments of calm and connection.">
+    <meta name="keywords" content="Surbhi Kakar, mindfulness sessions, Mindfulness Matters gallery, children mindfulness Amstelveen, Eline Snel method, session photos">
     <meta name="author" content="Surbhi Kakar">
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="About Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist">
-    <meta property="og:description" content="Discover Surbhi's journey from India to Amstelveen, combining yoga, mindfulness, and data science for a holistic approach to life.">
+    <meta property="og:title" content="Inside the Sessions | Surbhi Kakar">
+    <meta property="og:description" content="A glimpse into Mindfulness Matters sessions for children and teenagers in Amstelveen.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://surbhikakar.com/about">
+    <meta property="og:url" content="https://surbhikakar.com/gallery">
+    <link rel="canonical" href="https://surbhikakar.com/gallery">
 
-    <title>About | Surbhi Kakar</title>
+    <title>Inside the Sessions | Surbhi Kakar</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -30,37 +31,10 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "mainEntity": {
-            "@type": "Person",
-            "name": "Surbhi Kakar",
-            "jobTitle": ["Yoga Teacher", "Mindfulness Trainer", "Data Scientist"],
-            "alumniOf": [
-                {
-                    "@type": "CollegeOrUniversity",
-                    "name": "Jamia Millia Islamia",
-                    "description": "PhD in Computer Science"
-                },
-                {
-                    "@type": "Organization",
-                    "name": "Yoga Minds",
-                    "description": "Yoga Teacher Training"
-                }
-            ],
-            "hasCredential": [
-                {
-                    "@type": "EducationalOccupationalCredential",
-                    "name": "Mindfulness Trainer for Children & Teenagers",
-                    "credentialCategory": "Certificate"
-                }
-            ],
-            "author": {
-                "@type": "Book",
-                "name": "The Dancing Leaf",
-                "publisher": "Hay House",
-                "datePublished": "2024"
-            }
-        }
+        "@type": "ImageGallery",
+        "name": "Inside the Sessions, Mindfulness Matters",
+        "description": "Photographs from Mindfulness Matters sessions for children and teenagers in Amstelveen.",
+        "author": { "@type": "Person", "name": "Surbhi Kakar" }
     }
     </script>
 
@@ -592,17 +566,44 @@
                 gap: 2rem;
             }
         }
-        /* Gallery teaser */
-        .gallery-teaser { background-color: var(--white); }
-        .gallery-teaser .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
+
+        /* Gallery */
+        .gallery-section { padding-top: 3rem; }
+        .gallery-grid {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            column-count: 3;
+            column-gap: 1.25rem;
         }
-        .gallery-teaser-text h2 { color: var(--dark-brown); margin-bottom: 1rem; }
-        .gallery-teaser-text p { color: var(--muted-brown); margin-bottom: 1.5rem; }
-        .teaser-btn {
+        .gallery-figure {
+            break-inside: avoid;
+            margin: 0 0 1.25rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(72, 67, 56, 0.12);
+            cursor: zoom-in;
+        }
+        .gallery-figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .gallery-figure:hover img { transform: scale(1.03); }
+        .gallery-figure figcaption {
+            font-size: 0.85rem;
+            color: var(--muted-brown);
+            padding: 0.75rem 1rem 1rem;
+        }
+        @media (max-width: 900px) { .gallery-grid { column-count: 2; } }
+        @media (max-width: 560px) { .gallery-grid { column-count: 1; } }
+
+        /* Gallery CTA */
+        .gallery-cta { text-align: center; background-color: var(--warm-off-white); }
+        .gallery-cta h2 { color: var(--dark-brown); margin-bottom: 1rem; }
+        .gallery-cta p { color: var(--muted-brown); max-width: 600px; margin: 0 auto 1.75rem; }
+        .btn-link {
             display: inline-block;
             padding: 0.9rem 2rem;
             font-family: var(--font-sans);
@@ -614,23 +615,37 @@
             border: 2px solid var(--olive-green);
             transition: all 0.3s ease;
         }
-        .teaser-btn:hover { background-color: transparent; color: var(--olive-green); }
-        .gallery-teaser-imgs {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.75rem;
+        .btn-link:hover { background-color: transparent; color: var(--olive-green); }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 2000;
+            background-color: rgba(72, 67, 56, 0.92);
+            display: none; align-items: center; justify-content: center;
+            padding: 2rem;
         }
-        .gallery-teaser-imgs img {
-            width: 100%;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
-            border-radius: 8px;
-            display: block;
+        .lightbox.open { display: flex; }
+        .lightbox img {
+            max-width: min(1100px, 92vw); max-height: 82vh;
+            border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,0.4);
         }
-        .gallery-teaser-imgs img:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 7; }
-        @media (max-width: 768px) {
-            .gallery-teaser .container { grid-template-columns: 1fr; gap: 2rem; }
+        .lightbox-caption {
+            position: absolute; bottom: 1.5rem; left: 0; right: 0;
+            text-align: center; color: var(--warm-off-white);
+            font-family: var(--font-serif); font-style: italic; font-size: 1.05rem;
+            padding: 0 1.5rem;
         }
+        .lightbox-btn {
+            position: absolute; background: none; border: none; cursor: pointer;
+            color: var(--warm-off-white); font-size: 2.5rem; line-height: 1;
+            padding: 0.5rem 1rem; opacity: 0.8; transition: opacity 0.2s ease;
+            user-select: none;
+        }
+        .lightbox-btn:hover { opacity: 1; }
+        .lightbox-close { top: 1rem; right: 1.5rem; font-size: 2.75rem; }
+        .lightbox-prev { left: 0.5rem; top: 50%; transform: translateY(-50%); }
+        .lightbox-next { right: 0.5rem; top: 50%; transform: translateY(-50%); }
+        @media (max-width: 560px) { .lightbox-prev, .lightbox-next { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -639,9 +654,9 @@
             <a href="/" class="logo">Surbhi Kakar</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/" data-i18n="nav.home">Home</a></li>
-                <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
                 <li><a href="mindfulness-programs.html" data-i18n="nav.programs">Mindfulness Programs</a></li>
-                <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+                <li><a href="gallery.html" class="active" data-i18n="nav.gallery">Gallery</a></li>
                 <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="nav-right">
@@ -661,199 +676,73 @@
     <main>
         <!-- Page Header -->
         <section class="page-header">
-            <h1 data-i18n="about.title">About Me</h1>
-            <p data-i18n="about.subtitle">A journey of connecting body, mind, and purpose through yoga, mindfulness, and analytical thinking.</p>
+            <span class="badge" data-i18n="gallery.badge" style="display:inline-block;background-color:var(--olive-green);color:var(--white);font-size:0.8rem;font-weight:600;padding:0.4rem 1rem;border-radius:20px;letter-spacing:0.05em;margin-bottom:1rem;">Mindfulness Matters</span>
+            <h1 data-i18n="gallery.title">Inside the Sessions</h1>
+            <p data-i18n="gallery.subtitle">A glimpse into our Mindfulness Matters sessions: the space, the practice, and children discovering calm and confidence.</p>
         </section>
 
-        <!-- Yoga Journey Section -->
-        <section class="journey-section">
-            <div class="container">
-                <div class="journey-grid">
-                    <div class="journey-content">
-                        <h2 data-i18n="about.yoga.title">My Yoga Journey</h2>
-                        <p data-i18n="about.yoga.p1">
-                            Growing up in India, yoga's roots were woven into my cultural fabric long
-                            before I stepped onto a mat. But it wasn't until I encountered a transformative
-                            teacher that I truly understood yoga's power. In her class, I discovered
-                            something profound: I am more than my thoughts.
-                        </p>
-                        <p data-i18n="about.yoga.p2">
-                            By anchoring into my body, I found joy existing in the present moment, even
-                            while my mind churned with worries and to-do lists. That discovery changed everything.
-                        </p>
-                        <p data-i18n="about.yoga.p3">
-                            In 2024, I completed my Yoga Teacher Training at Yoga Minds in the Netherlands,
-                            deepening both my practice and my commitment to sharing this ancient wisdom.
-                            Today, I teach Hatha and Vinyasa yoga, guiding students to discover their own
-                            connection between breath, body, and awareness, the same revelation that
-                            transformed my life.
-                        </p>
-                    </div>
-                    <div class="journey-aside">
-                        <img src="img/surbhi-profile.jpg" alt="Surbhi Kakar sitting by a mountain stream" class="journey-photo" width="732" height="1000" loading="lazy">
-                        <div class="journey-highlight">
-                            <p data-i18n="about.yoga.quote">
-                                "I am more than my thoughts. By anchoring into my body, I found joy
-                                existing in the present moment, even while my mind churned with worries
-                                and to-do lists."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mindfulness Journey Section -->
-        <section class="journey-section" style="background-color: var(--warm-off-white);">
-            <div class="container">
-                <div class="journey-grid">
-                    <div class="journey-aside">
-                        <img src="img/mindfulness-pilot-children.jpg" alt="Surbhi Kakar with children from a Mindfulness Matters pilot session" class="journey-photo" width="1000" height="750" loading="lazy">
-                        <p class="journey-photo-caption" data-i18n="about.mindfulness.photo.caption">With children from a Mindfulness Matters pilot session</p>
-                        <div class="journey-highlight">
-                            <p data-i18n="about.mindfulness.quote">
-                                "Children's minds are like fresh soil. When we plant seeds of mindfulness
-                                and kindness early, they grow into adults who accept themselves fully,
-                                express themselves authentically, and create harmony within themselves
-                                and in the world around them."
-                            </p>
-                        </div>
-                    </div>
-                    <div class="journey-content">
-                        <h2 data-i18n="about.mindfulness.title">My Mindfulness Journey</h2>
-                        <p data-i18n="about.mindfulness.p1">
-                            My path to mindfulness began in 2019 when I discovered the teachings of
-                            Vietnamese monk Thich Nhat Hanh. What resonated deeply with me was his
-                            vision of "engaged mindfulness": a practice that extends beyond the meditation
-                            cushion into meaningful action in the world. His teachings inspired me to
-                            share this gift with others, particularly children.
-                        </p>
-                        <p data-i18n="about.mindfulness.p2">
-                            In today's world, constant busyness has become a badge of honor, a marker
-                            of success. Yet this relentless pace disconnects us from our bodies and
-                            emotions, leaving us ungrounded. I've witnessed how vital it is to understand
-                            and navigate our emotions, and how much more powerful this skill becomes
-                            when cultivated early.
-                        </p>
-                        <p data-i18n="about.mindfulness.p3">
-                            This vision drives my work with children today.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Professional Background Section -->
-        <section class="credentials-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-i18n="about.credentials.title">Professional Background</h2>
-                </div>
-                <div class="credentials-content">
-                    <p data-i18n="about.credentials.p1">
-                        My professional journey has been anything but linear and that's exactly what makes
-                        my approach unique. I've nurtured young minds as an Assistant Professor, earned a
-                        PhD in Computer Science, and applied analytical thinking as a Data Scientist solving
-                        complex challenges in banking and retail. I've also authored "The Dancing Leaf," a
-                        contemplative work exploring nature, mindfulness, and the quiet wisdom found in
-                        observing the world around us.
-                    </p>
-                    <p data-i18n="about.credentials.p2">
-                        Today, these seemingly disparate paths converge in my work as a yoga teacher and
-                        mindfulness trainer for children and teenagers. I'm trained with the Academy for
-                        Mindful Teaching, based on the internationally recognized Eline Snel Method (The Frog),
-                        which is already implemented in several schools in the Netherlands and abroad. Having
-                        completed a supervised pilot program for children aged 5 to 12 under the guidance of
-                        the Academy for Mindful Teaching, I now offer Mindfulness Matters programs for ages
-                        5-8 and 8-11, along with a new introductory program for teenagers aged 12-14.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section class="publications-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-i18n="about.publications.title">Publications</h2>
-                    <p data-i18n="about.publications.subtitle">Contributions to literature and research</p>
-                </div>
-                <div class="publications-grid">
-                    <article class="publication-card">
-                        <span class="publication-type" data-i18n="about.publications.book">Book</span>
-                        <h3 data-i18n="about.publications.dancing.title">The Dancing Leaf</h3>
-                        <p class="publication-meta" data-i18n="about.publications.dancing.meta">Hay House, 2024</p>
-                        <p class="publication-desc" data-i18n="about.publications.dancing.desc">
-                            A contemplative work exploring themes of nature, mindfulness,
-                            and the gentle wisdom found in observing the world around us.
-                        </p>
-                    </article>
-                    <article class="publication-card">
-                        <span class="publication-type" data-i18n="about.publications.textbook">Textbook</span>
-                        <h3 data-i18n="about.publications.java.title">A Textbook of Java Programming</h3>
-                        <p class="publication-meta" data-i18n="about.publications.java.meta">2017</p>
-                        <p class="publication-desc" data-i18n="about.publications.java.desc">
-                            A comprehensive guide to Java programming, designed for students
-                            and professionals seeking to master the language.
-                        </p>
-                    </article>
-                    <article class="publication-card">
-                        <span class="publication-type" data-i18n="about.publications.research">Research</span>
-                        <h3 data-i18n="about.publications.ieee.title">IEEE Research Papers</h3>
-                        <p class="publication-meta" data-i18n="about.publications.ieee.meta">Multiple publications</p>
-                        <p class="publication-desc" data-i18n="about.publications.ieee.desc">
-                            Academic research papers on Machine Learning and Artificial Intelligence,
-                            contributing to the advancement of computer science knowledge.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Volunteering Section -->
-        <section class="volunteering-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-i18n="about.volunteering.title">Giving Back</h2>
-                    <p data-i18n="about.volunteering.subtitle">Contributing to community and causes I care about</p>
-                </div>
-                <div class="volunteering-grid">
-                    <div class="volunteer-card">
-                        <h4 data-i18n="about.volunteering.wakeup.title">Wake Up Amsterdam</h4>
-                        <p data-i18n="about.volunteering.wakeup.desc">Organizing mindfulness days for adults, fostering present-moment awareness in the community.</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <h4 data-i18n="about.volunteering.fruittuin.title">Fruittuin Van West</h4>
-                        <p data-i18n="about.volunteering.fruittuin.desc">Environmental volunteering, connecting with nature and supporting sustainable urban agriculture.</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <h4 data-i18n="about.volunteering.un.title">UN Volunteers</h4>
-                        <p data-i18n="about.volunteering.un.desc">Authored Java programming courses, making technology education accessible globally.</p>
-                    </div>
-                    <div class="volunteer-card">
-                        <h4 data-i18n="about.volunteering.landmark.title">Landmark</h4>
-                        <p data-i18n="about.volunteering.landmark.desc">Provided life coaching and personal development, helping others discover their potential.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Teaser -->
-        <section class="gallery-teaser">
-            <div class="container">
-                <div class="gallery-teaser-text">
-                    <h2 data-i18n="gallery.teaser.title">Inside the Sessions</h2>
-                    <p data-i18n="gallery.teaser.text">See moments from our Mindfulness Matters sessions: the space, the practice, and children discovering calm.</p>
-                    <a href="gallery.html" class="teaser-btn" data-i18n="gallery.teaser.btn">View the Gallery</a>
-                </div>
-                <a href="gallery.html" class="gallery-teaser-imgs" aria-label="View the gallery">
-                    <img src="img/gallery/gallery-room-setup.jpg" alt="Session room set up with mats and cushions" loading="lazy">
+        <!-- Gallery -->
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <figure class="gallery-figure" data-index="0">
+                    <img src="img/gallery/gallery-room-setup.jpg" alt="The session room set up with mats, cushions and a singing bowl" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.setup">The session room set up with mats, cushions and a singing bowl</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="1">
+                    <img src="img/gallery/gallery-reading-card.jpg" alt="A child reading an affirmation card on a yoga mat" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.reading">A child reading an affirmation card on a yoga mat</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="2">
                     <img src="img/gallery/gallery-affirmation-bowl.jpg" alt="Affirmation cards and a bowl of treasures" loading="lazy">
-                    <img src="img/gallery/gallery-frog-altar.jpg" alt="A mindfulness frog and flowers in the room" loading="lazy">
-                </a>
+                    <figcaption data-i18n="gallery.cap.bowl">Affirmation cards and a bowl of treasures</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="3">
+                    <img src="img/gallery/gallery-child-mat.jpg" alt="A child settling onto a yoga mat" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.mat">A child settling onto a yoga mat</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="4">
+                    <img src="img/gallery/gallery-group-stretching.jpg" alt="Children sharing a moment of reflection together" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.stretch">Moments of reflection together</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="5">
+                    <img src="img/gallery/gallery-breathe-stone.jpg" alt="A stone engraved with the word Breathe" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.breathe">A stone engraved with the word Breathe</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="6">
+                    <img src="img/gallery/gallery-coloring.jpg" alt="Children making kindness cards for loved ones" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.color">Making kindness cards for loved ones</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="7">
+                    <img src="img/gallery/gallery-frog-altar.jpg" alt="A mindfulness frog, breathing stone and flowers in the room" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.frog">A mindfulness frog, breathing stone and flowers in the room</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="8">
+                    <img src="img/gallery/gallery-reflection.jpg" alt="A child writing quietly during a reflection exercise" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.reflect">A child writing quietly during a reflection exercise</figcaption>
+                </figure>
+                <figure class="gallery-figure" data-index="9">
+                    <img src="img/gallery/gallery-writing.jpg" alt="Children putting feelings into words on their mats" loading="lazy">
+                    <figcaption data-i18n="gallery.cap.writing">Children putting feelings into words on their mats</figcaption>
+                </figure>
             </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="gallery-cta">
+            <h2 data-i18n="gallery.cta.title">Join an Upcoming Session</h2>
+            <p data-i18n="gallery.cta.text">Come to the free intake on Saturday 20 June 2026 at Platform C, Amstelveen, or get in touch to learn more.</p>
+            <a href="intake-registration.html" class="btn-link" data-i18n="intake.register">Register for the Intake</a>
         </section>
     </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-btn lightbox-close" id="lbClose" aria-label="Close">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+        <img id="lbImg" src="" alt="">
+        <button class="lightbox-btn lightbox-next" id="lbNext" aria-label="Next">&#8250;</button>
+        <p class="lightbox-caption" id="lbCaption"></p>
+    </div>
 
     <footer>
         <div class="footer-content">
@@ -904,6 +793,35 @@
                 navLinks.classList.remove('active');
             });
         });
+
+        // Lightbox
+        (function () {
+            const figs = [...document.querySelectorAll('.gallery-figure')];
+            const lb = document.getElementById('lightbox');
+            const lbImg = document.getElementById('lbImg');
+            const lbCap = document.getElementById('lbCaption');
+            let idx = 0;
+            function show(i) {
+                idx = (i + figs.length) % figs.length;
+                const img = figs[idx].querySelector('img');
+                lbImg.src = img.src;
+                lbImg.alt = img.alt;
+                lbCap.textContent = figs[idx].querySelector('figcaption').textContent;
+            }
+            function open(i) { show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); }
+            function close() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); }
+            figs.forEach((f, i) => f.addEventListener('click', () => open(i)));
+            document.getElementById('lbClose').addEventListener('click', close);
+            document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); show(idx - 1); });
+            document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); show(idx + 1); });
+            lb.addEventListener('click', e => { if (e.target === lb || e.target === lbImg) close(); });
+            document.addEventListener('keydown', e => {
+                if (!lb.classList.contains('open')) return;
+                if (e.key === 'Escape') close();
+                else if (e.key === 'ArrowLeft') show(idx - 1);
+                else if (e.key === 'ArrowRight') show(idx + 1);
+            });
+        })();
     </script>
 </body>
 </html>
