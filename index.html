@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Surbhi Kakar - Yoga Teacher, Mindfulness Trainer for Children, and Data Scientist based in Amstelveen. Offering yoga classes, mindfulness programs, and holistic well-being guidance.">
-    <meta name="keywords" content="yoga teacher, mindfulness trainer, children mindfulness, data scientist, Amstelveen, hatha yoga, vinyasa yoga">
+    <meta name="description" content="Mindfulness courses for children and teenagers in Amstelveen, based on the Eline Snel method, plus yoga and mindfulness for adults. Taught by Surbhi Kakar.">
+    <meta name="keywords" content="mindfulness kinderen Amstelveen, mindfulness voor kinderen, Eline Snel methode, mindfulness training kinderen, kindermindfulness, yoga Amstelveen, mindfulness volwassenen, hatha yoga, vinyasa yoga">
     <meta name="author" content="Surbhi Kakar">
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist">
+    <meta property="og:title" content="Surbhi Kakar | Mindfulness for Children &amp; Yoga in Amstelveen">
     <meta property="og:description" content="Guiding children and adults toward mindful living through yoga, mindfulness training, and a balanced approach to life.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://surbhikakar.com">
     <meta property="og:locale" content="en_US">
 
-    <title>Surbhi Kakar | Yoga Teacher, Mindfulness Trainer, Data Scientist</title>
+    <title>Mindfulness for Children in Amstelveen | Surbhi Kakar</title>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -34,7 +34,7 @@
         "@type": "Person",
         "name": "Surbhi Kakar",
         "jobTitle": ["Yoga Teacher", "Mindfulness Trainer", "Data Scientist"],
-        "description": "Yoga Teacher, Mindfulness Trainer for Children, and Data Scientist based in Amstelveen",
+        "description": "Mindfulness trainer for children and teenagers, and yoga teacher, based in Amstelveen",
         "url": "https://surbhikakar.com",
         "email": "hello@surbhikakar.com",
         "sameAs": [
@@ -411,6 +411,47 @@
             font-size: 0.95rem;
         }
 
+
+        .pillar-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pillar-card.is-featured {
+            background-color: var(--white);
+            border: 2px solid var(--olive-green);
+        }
+
+        .pillar-flag {
+            position: absolute;
+            top: -0.75rem;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background-color: var(--olive-green);
+            color: var(--white);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.85rem;
+            border-radius: 20px;
+        }
+
+        .pillar-link {
+            display: inline-block;
+            margin-top: auto;
+            padding-top: 1.25rem;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--olive-green);
+        }
+
+        .pillar-link:hover {
+            color: var(--muted-brown);
+        }
+
         /* Quote Section */
         .quote-section {
             background-color: var(--light-beige);
@@ -593,10 +634,11 @@
         <section class="hero">
             <div class="hero-content">
                 <h1 data-i18n="hero.title">Surbhi Kakar</h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Yoga Teacher | Mindfulness Trainer | Data Scientist</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Yoga &amp; Mindfulness in Amstelveen</p>
                 <p class="hero-intro" data-i18n="hero.intro">
-                    Guiding children and adults toward mindful living through yoga,
-                    mindfulness training, and a balanced approach to life. Based in Amstelveen.
+                    Teaching children, teenagers and adults to settle, to notice what they
+                    are feeling, and to find their attention again. Through yoga, and through
+                    the mindfulness method of Eline Snel.
                 </p>
                 <div class="btn-group">
                     <a href="mindfulness-programs.html" class="btn btn-primary" data-i18n="hero.cta.programs">Mindfulness Programs</a>
@@ -609,57 +651,61 @@
         <section class="pillars">
             <div class="container">
                 <div class="section-header">
-                    <h2 data-i18n="pillars.title">Three Pillars of Practice</h2>
-                    <p data-i18n="pillars.subtitle">A holistic approach to well-being and growth</p>
+                    <h2 data-i18n="pillars.title">What I Teach</h2>
+                    <p data-i18n="pillars.subtitle">Three ways to practise, for three different stages of life</p>
                 </div>
                 <div class="pillars-grid">
+
+                    <article class="pillar-card is-featured">
+                        <span class="pillar-flag" data-i18n="pillars.children.flag">Enrolling now</span>
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21c-4.5-3-8-6-8-10a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 4-3.5 7-8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="pillars.children.title">Mindfulness for Children</h3>
+                        <p data-i18n="pillars.children.desc">
+                            An eight-week course for children aged 5 to 12, and a ten-week course
+                            for teenagers. Small groups, playful practice, and no way to get it wrong.
+                            Based on the Eline Snel method.
+                        </p>
+                        <a href="mindfulness-programs.html" class="pillar-link" data-i18n="pillars.children.link">See the courses &rarr;</a>
+                    </article>
+
                     <article class="pillar-card">
                         <div class="pillar-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                                <path d="M12 6v6l4 2"/>
-                                <circle cx="12" cy="12" r="3"/>
+                                <circle cx="12" cy="5" r="2.5"/>
+                                <path d="M5 10h14"/>
+                                <path d="M12 10v5"/>
+                                <path d="M12 15l-4 5M12 15l4 5"/>
                             </svg>
                         </div>
                         <h3 data-i18n="pillars.yoga.title">Yoga</h3>
                         <p data-i18n="pillars.yoga.desc">
-                            Teaching Hatha and Vinyasa yoga with a focus on connecting body,
-                            breath, and mind. Yoga is more than physical practice. It's a path
-                            to inner awareness and balance.
+                            Hatha and Vinyasa, taught with attention to the breath rather than
+                            the shape. The posture is a way in, not the point. For adults, at
+                            Shiva Yoga Center.
                         </p>
+                        <a href="contact.html" class="pillar-link" data-i18n="pillars.yoga.link">Ask about classes &rarr;</a>
                     </article>
+
                     <article class="pillar-card">
                         <div class="pillar-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                                <path d="M2 17l10 5 10-5"/>
-                                <path d="M2 12l10 5 10-5"/>
+                                <circle cx="12" cy="12" r="9"/>
+                                <circle cx="12" cy="12" r="4"/>
                             </svg>
                         </div>
-                        <h3 data-i18n="pillars.mindfulness.title">Mindfulness</h3>
-                        <p data-i18n="pillars.mindfulness.desc">
-                            Mindfulness trainer for children, helping young minds
-                            develop present-moment awareness, emotional regulation, and
-                            inner calm through playful, age-appropriate practices.
+                        <h3 data-i18n="pillars.adults.title">Mindfulness for Adults</h3>
+                        <p data-i18n="pillars.adults.desc">
+                            Workshops for adults who would like to practise the same attention
+                            their children are learning, or who simply want somewhere quiet to
+                            begin. Get in touch to hear what is coming.
                         </p>
+                        <a href="contact.html" class="pillar-link" data-i18n="pillars.adults.link">Register your interest &rarr;</a>
                     </article>
-                    <article class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                                <path d="M8 12h8"/>
-                                <path d="M12 8v8"/>
-                                <circle cx="8" cy="8" r="1"/>
-                                <circle cx="16" cy="16" r="1"/>
-                            </svg>
-                        </div>
-                        <h3 data-i18n="pillars.data.title">Data Science</h3>
-                        <p data-i18n="pillars.data.desc">
-                            PhD in Computer Science with expertise in machine learning and AI.
-                            Bringing analytical thinking and research rigor to understanding
-                            patterns in data and human behavior.
-                        </p>
-                    </article>
+
                 </div>
             </div>
         </section>
@@ -679,8 +725,9 @@
             <div class="container">
                 <h2 data-i18n="cta.title">Start Your Mindfulness Journey</h2>
                 <p data-i18n="cta.text">
-                    Whether you're seeking yoga classes, mindfulness training for your child,
-                    or simply want to learn more about living mindfully, I'm here to guide you.
+                    Groups are small and fill quickly. Get in touch to hear when the next
+                    one begins, or to arrange a free introductory conversation. There is
+                    no obligation.
                 </p>
                 <a href="contact.html" class="btn btn-primary" data-i18n="cta.button">Get in Touch</a>
             </div>
