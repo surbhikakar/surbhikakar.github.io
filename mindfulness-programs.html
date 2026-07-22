@@ -359,204 +359,6 @@
             flex-shrink: 0;
         }
 
-        /* Programs Section */
-        .programs-section {
-            background-color: var(--warm-off-white);
-        }
-
-        .program-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .tab-btn {
-            padding: 1rem 2rem;
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            font-weight: 500;
-            background-color: var(--white);
-            color: var(--dark-brown);
-            border: 2px solid var(--light-beige);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .tab-btn:hover {
-            border-color: var(--olive-green);
-        }
-
-        .tab-btn.active {
-            background-color: var(--olive-green);
-            color: var(--white);
-            border-color: var(--olive-green);
-        }
-
-        .program-content {
-            display: none;
-        }
-
-        .program-content.active {
-            display: block;
-        }
-
-        .program-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .program-header h3 {
-            font-size: 2rem;
-            color: var(--dark-brown);
-            margin-bottom: 0.5rem;
-        }
-
-        .program-header .age-tag {
-            display: inline-block;
-            background-color: var(--soft-yellow);
-            color: var(--dark-brown);
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            margin-bottom: 1rem;
-        }
-
-        .program-header p {
-            color: var(--muted-brown);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Week Cards */
-        .weeks-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .week-card {
-            background-color: var(--white);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(72, 67, 56, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .week-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(72, 67, 56, 0.1);
-        }
-
-        .week-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background-color: var(--olive-green);
-            color: var(--white);
-            font-weight: 600;
-            font-size: 0.9rem;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-
-        .week-card h4 {
-            color: var(--dark-brown);
-            font-size: 1.15rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .week-card .concept {
-            font-size: 0.9rem;
-            color: var(--olive-green);
-            font-style: italic;
-            margin-bottom: 0.75rem;
-        }
-
-        .week-card p {
-            font-size: 0.9rem;
-            color: var(--muted-brown);
-            margin-bottom: 0;
-        }
-
-        .week-card ul {
-            list-style: none;
-            margin-top: 0.75rem;
-        }
-
-        .week-card ul li {
-            font-size: 0.85rem;
-            color: var(--muted-brown);
-            padding-left: 1rem;
-            position: relative;
-            margin-bottom: 0.3rem;
-        }
-
-        .week-card ul li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--olive-green);
-        }
-
-        /* Parent Support Section */
-        .parent-section {
-            background-color: var(--white);
-        }
-
-        /* Practice Box */
-
-        /* Credentials Section */
-        .credentials-section {
-            background-color: var(--light-beige);
-        }
-
-        .credentials-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .credentials-content h2 {
-            color: var(--dark-brown);
-            margin-bottom: 1.5rem;
-        }
-
-        .credentials-content p {
-            color: var(--muted-brown);
-            margin-bottom: 2rem;
-        }
-
-        .credential-badges {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .credential-badge {
-            background-color: var(--white);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .credential-badge h4 {
-            color: var(--dark-brown);
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .credential-badge p {
-            color: var(--muted-brown);
-            font-size: 0.85rem;
-            margin: 0;
-        }
-
         /* CTA Section */
         .cta-section {
             background-color: var(--olive-green);
@@ -706,15 +508,6 @@
             .intro-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-            }
-
-            .program-tabs {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .tab-btn {
-                text-align: center;
             }
 
             .weeks-grid {
@@ -886,6 +679,15 @@
 
 .offer-stream .stream-detail { line-height: 1.55; }
 
+.offer-stream .stream-blurb {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    opacity: 0.92;
+    margin: 0.5rem 0 1rem;
+}
+
+
+
 /* ---------- Outcomes ---------- */
 .outcomes-section { background-color: var(--white); }
 
@@ -925,6 +727,50 @@
     margin-bottom: 0;
 }
 
+
+/* ---------- Testimonials ---------- */
+.testimonials-section { background-color: var(--warm-off-white); }
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.75rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    border: 1px solid var(--light-beige);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card .quote-mark {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    line-height: 0.6;
+    color: var(--warm-tan);
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-card p {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--dark-brown);
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+    .testimonial-card { padding: 1.5rem; }
+    .testimonial-card p { font-size: 1.1rem; }
+}
+
 /* ---------- What's included ---------- */
 .included-section { background-color: var(--warm-off-white); }
 
@@ -961,172 +807,7 @@
 
 
 /* ---------- Practising at home ---------- */
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.15fr;
-    gap: 2rem;
-    max-width: 980px;
-    margin: 0 auto;
-    align-items: stretch;
-}
 
-.home-col {
-    background-color: var(--warm-off-white);
-    border: 1px solid var(--light-beige);
-    border-radius: 12px;
-    padding: 2rem;
-}
-
-.home-col h3 {
-    color: var(--dark-brown);
-    font-size: 1.35rem;
-    margin-bottom: 1.25rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--light-beige);
-}
-
-.home-lede {
-    color: var(--muted-brown);
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
-}
-
-.home-list {
-    list-style: none;
-}
-
-.home-list li {
-    position: relative;
-    padding-left: 1.75rem;
-    margin-bottom: 1rem;
-    color: var(--muted-brown);
-    font-size: 0.97rem;
-}
-
-.home-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.6em;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: var(--warm-tan);
-}
-
-.home-list li:last-child { margin-bottom: 0; }
-
-.home-steps {
-    list-style: none;
-    counter-reset: step;
-}
-
-.home-steps li {
-    counter-increment: step;
-    position: relative;
-    padding-left: 2.25rem;
-    margin-bottom: 0.9rem;
-    color: var(--muted-brown);
-    font-size: 0.97rem;
-}
-
-.home-steps li::before {
-    content: counter(step);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1.6rem;
-    height: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--olive-green);
-    color: var(--white);
-    font-family: var(--font-serif);
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.home-note {
-    margin-top: 1.5rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--light-beige);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.02rem;
-    color: var(--olive-green);
-    margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .home-grid { grid-template-columns: 1fr; }
-}
-
-/* ---------- Curriculum accordion ---------- */
-.curriculum-accordion {
-    max-width: 820px;
-    margin: 0 auto;
-}
-
-.week-row {
-    border-bottom: 1px solid var(--light-beige);
-}
-
-.week-toggle {
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    padding: 1.1rem 0.5rem;
-    background: none;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    font-family: var(--font-sans);
-    color: var(--dark-brown);
-}
-
-.week-toggle:hover { color: var(--olive-green); }
-
-.week-toggle .num {
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--warm-tan);
-    min-width: 1.75rem;
-}
-
-.week-toggle .name {
-    font-family: var(--font-serif);
-    font-size: 1.15rem;
-    font-weight: 500;
-    flex: 1;
-}
-
-.week-toggle .chev {
-    color: var(--muted-brown);
-    transition: transform 0.25s ease;
-    font-size: 0.85rem;
-}
-
-.week-row.open .week-toggle .chev { transform: rotate(180deg); }
-
-.week-body {
-    display: none;
-    padding: 0 0.5rem 1.25rem 3.25rem;
-}
-
-.week-row.open .week-body { display: block; }
-
-.week-body .concept {
-    font-family: var(--font-serif);
-    font-style: italic;
-    color: var(--olive-green);
-    margin-bottom: 0.5rem;
-}
-
-.week-body p { color: var(--muted-brown); margin-bottom: 0; }
 
 @media (max-width: 768px) {
     .offer-card { padding: 1.75rem 1.25rem; }
@@ -1170,38 +851,36 @@
     <p data-i18n="programs.subtitle">An eight-week course where children learn to settle, to recognise what they are feeling, and to find their attention again. Playful, gentle, and built for how children actually are.</p>
 </section>
 
-<!-- Offer -->
+<!-- Offer / Groups -->
 <section class="offer-section">
     <div class="offer-card">
-        <h2 data-i18n="offer.title">Three Groups, Eight Weeks</h2>
-        <p class="offer-lede" data-i18n="offer.lede">Based on the Eline Snel method. Lessons are taught in English.</p>
-
-        <p class="offer-shared" data-i18n="offer.shared">Small groups of no more than seven children, so every child is seen.</p>
+        <h2 data-i18n="offer.title">The Groups</h2>
+        <p class="offer-lede" data-i18n="offer.lede">Based on the Eline Snel method. Small groups of no more than seven children, so every child is seen. Lessons are taught in English.</p>
 
         <div class="offer-streams">
             <div class="offer-stream">
                 <span class="stream-age" data-i18n="offer.s1.age">Ages 5&ndash;8</span>
+                <p class="stream-blurb" data-i18n="offer.s1.blurb">Playful, short activities for young children, building body awareness and first emotional skills.</p>
                 <span class="stream-price" data-i18n="offer.s1.price">&euro;175</span>
                 <p class="stream-detail">
-                    <span data-i18n="offer.s1.weeks">8 lessons</span><br>
-                    <span data-i18n="offer.s1.length">40 minutes each</span>
+                    <span data-i18n="offer.s1.weeks">8 lessons</span> &middot; <span data-i18n="offer.s1.length">40 min each</span>
                 </p>
             </div>
             <div class="offer-stream">
                 <span class="stream-age" data-i18n="offer.s2.age">Ages 8&ndash;12</span>
+                <p class="stream-blurb" data-i18n="offer.s2.blurb">For school-age children learning to focus, handle bigger feelings, and settle a busy mind.</p>
                 <span class="stream-price" data-i18n="offer.s2.price">&euro;175</span>
                 <p class="stream-detail">
-                    <span data-i18n="offer.s2.weeks">8 lessons</span><br>
-                    <span data-i18n="offer.s2.length">50 minutes each</span>
+                    <span data-i18n="offer.s2.weeks">8 lessons</span> &middot; <span data-i18n="offer.s2.length">50 min each</span>
                 </p>
             </div>
             <div class="offer-stream is-intro">
                 <span class="stream-flag" data-i18n="offer.s3.flag">Introductory</span>
                 <span class="stream-age" data-i18n="offer.s3.age">Teens 12&ndash;14</span>
+                <p class="stream-blurb" data-i18n="offer.s3.blurb">A course for teenagers navigating school stress, social pressure, and a full head.</p>
                 <span class="stream-price" data-i18n="offer.s3.price">&euro;99</span>
                 <p class="stream-detail">
-                    <span data-i18n="offer.s3.weeks">10 lessons</span><br>
-                    <span data-i18n="offer.s3.length">60 minutes each</span>
+                    <span data-i18n="offer.s3.weeks">10 lessons</span> &middot; <span data-i18n="offer.s3.length">60 min each</span>
                 </p>
             </div>
         </div>
@@ -1223,33 +902,64 @@
             <p data-i18n="outcomes.subtitle">Not something to be good at. Something to carry.</p>
         </div>
         <div class="outcomes-grid">
+
             <div class="outcome">
                 <div class="outcome-icon">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                        <circle cx="12" cy="12" r="9"/><rect x="9" y="9" width="6" height="6" rx="1"/>
+                    <svg width="46" height="46" viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M50 32 L14 40 L14 74 L50 66 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                        <path d="M50 32 L86 40 L86 74 L50 66 Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                        <line x1="50" y1="32" x2="50" y2="66" stroke="currentColor" stroke-width="4"/>
+                        <circle cx="50" cy="20" r="6" fill="currentColor"/>
+                        <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                            <line x1="50" y1="6" x2="50" y2="2"/>
+                            <line x1="38" y1="10" x2="34" y2="6"/>
+                            <line x1="62" y1="10" x2="66" y2="6"/>
+                        </g>
                     </svg>
                 </div>
-                <h3 data-i18n="outcomes.1.title">Calm</h3>
-                <p data-i18n="outcomes.1.desc">A pause before reacting. Children learn that there is a moment between what happens and what they do, and that the breath is always with them.</p>
+                <h3 data-i18n="outcomes.1.title">Better focus at school</h3>
+                <p data-i18n="outcomes.1.desc">Attention wanders, for everyone. Children learn to notice when it drifts and to bring it back, so they can settle and concentrate with more ease.</p>
             </div>
+
             <div class="outcome">
                 <div class="outcome-icon">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                        <path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/><circle cx="12" cy="12" r="3"/>
+                    <svg width="46" height="46" viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M74 30 a16 16 0 1 0 6 20 13 13 0 0 1 -6 -20z" fill="currentColor"/>
+                        <rect x="16" y="60" width="68" height="16" rx="6" fill="none" stroke="currentColor" stroke-width="4"/>
+                        <circle cx="34" cy="52" r="12" fill="none" stroke="currentColor" stroke-width="4"/>
+                        <path d="M46 60 q18 -8 38 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M52 46 q10 -9 20 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 4"/>
                     </svg>
                 </div>
-                <h3 data-i18n="outcomes.2.title">Focus at School</h3>
-                <p data-i18n="outcomes.2.desc">Attention wanders, for everyone. Children learn that noticing this is the practice, and that attention can always be brought back.</p>
+                <h3 data-i18n="outcomes.2.title">Calmer at bedtime</h3>
+                <p data-i18n="outcomes.2.desc">With simple ways to settle the body and follow the breath, children fall asleep more easily and lie awake worrying less.</p>
             </div>
+
             <div class="outcome">
                 <div class="outcome-icon">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                        <path d="M4 14a5 5 0 0 1 4-8 6 6 0 0 1 11 3 4 4 0 0 1-2 5"/><path d="M8 19l-1 2M12 19l-1 2M16 19l-1 2"/>
+                    <svg width="46" height="46" viewBox="0 0 100 100" aria-hidden="true">
+                        <g transform="translate(44,40)">
+                            <circle cx="-18" cy="0" r="15" fill="currentColor"/>
+                            <circle cx="2" cy="-8" r="19" fill="currentColor"/>
+                            <circle cx="20" cy="0" r="14" fill="currentColor"/>
+                            <rect x="-18" y="-2" width="40" height="16" rx="8" fill="currentColor"/>
+                        </g>
+                        <g stroke="currentColor" stroke-width="5" stroke-linecap="round">
+                            <line x1="30" y1="62" x2="26" y2="76"/>
+                            <line x1="46" y1="64" x2="42" y2="78"/>
+                            <line x1="62" y1="62" x2="58" y2="76"/>
+                        </g>
+                        <circle cx="72" cy="66" r="10" fill="currentColor"/>
+                        <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                            <line x1="72" y1="50" x2="72" y2="45"/>
+                            <line x1="86" y1="66" x2="91" y2="66"/>
+                        </g>
                     </svg>
                 </div>
-                <h3 data-i18n="outcomes.3.title">Knowing Their Feelings</h3>
-                <p data-i18n="outcomes.3.desc">Anger, sadness and worry are allowed here. Children learn to notice and name them, and discover that feelings pass, like weather.</p>
+                <h3 data-i18n="outcomes.3.title">Understanding feelings</h3>
+                <p data-i18n="outcomes.3.desc">Anger, sadness and worry are allowed here. Children learn to notice and name them, and discover that feelings pass over, like the weather.</p>
             </div>
+
         </div>
     </div>
 </section>
@@ -1315,380 +1025,6 @@
 </section>
 
 
-        <!-- Programs Section -->
-        <section class="programs-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-i18n="programs.our.title">Our Programs</h2>
-                    <p data-i18n="programs.our.subtitle">Choose the program designed for your child's age group</p>
-                </div>
-
-                <div class="program-tabs">
-                    <button class="tab-btn active" data-tab="ages-5-8" data-i18n="programs.tab.5-8">Ages 5-8</button>
-                    <button class="tab-btn" data-tab="ages-8-12" data-i18n="programs.tab.8-11">Ages 8-12</button>
-                    <button class="tab-btn" data-tab="ages-12-14" data-i18n="programs.tab.12-14">Teens 12-14</button>
-                </div>
-
-                <!-- Ages 5-8 Program -->
-                <div class="program-content active" id="ages-5-8">
-                    <div class="program-header">
-                        <span class="age-tag" data-i18n="programs.tab.5-8">Ages 5-8</span>
-                        <h3 data-i18n="programs.5-8.title">Building Foundation Skills for Young Learners</h3>
-                        <p data-i18n="programs.5-8.desc">
-                            This program introduces young children to attention training through playful
-                            activities, helping them develop body awareness and emotional understanding
-                            in age-appropriate ways with shorter activities suited for younger attention spans.
-                        </p>
-                    </div>
-
-                    <div class="curriculum-accordion">
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">1</span>
-                                <span class="name" data-i18n="week.1.title">The A for Attention</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.1.concept">"Friendly, mild attention for what is here now"</p>
-                                <p data-i18n="week.1.desc">Children learn to pay attention to the present moment, notice what they're doing and feeling, and discover that relaxation feels good.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">2</span>
-                                <span class="name" data-i18n="week.2.title">An Expedition Through Your Body</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.2.concept">"Living in your body means picking up signals"</p>
-                                <p data-i18n="week.2.desc">Children learn that their body tells them when they're tired, happy, nervous, or sad, and how to recognize these signals.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">3</span>
-                                <span class="name" data-i18n="week.3.title">Using All Five Senses</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.3.concept">"Using senses brings you closer to actual experience"</p>
-                                <p data-i18n="week.3.desc">Through the raisin exercise and "sitting like a frog," children learn to observe without judgment and experience the moment directly.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">4</span>
-                                <span class="name" data-i18n="week.4.title">You Can Feel Feelings</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.4.concept">"The four basic feelings are anger, joy, fear, and sorrow"</p>
-                                <p data-i18n="week.4.desc">Children discover that all feelings are normal and temporary, like weather that comes and goes.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">5</span>
-                                <span class="name" data-i18n="week.5.title">Accepting Feelings</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.5.concept">"Acceptance means recognizing what is happening"</p>
-                                <p data-i18n="week.5.desc">Children learn to notice feelings in their bodies and accept them with friendly attention, without suppressing or being overwhelmed.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">6</span>
-                                <span class="name" data-i18n="week.6.title">Moving Consciously</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.6.concept">"When consciousness and body work together"</p>
-                                <p data-i18n="week.6.desc">Children notice their possibilities and limitations, learning to react to their body appropriately and build self-awareness.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">7</span>
-                                <span class="name" data-i18n="week.7.title">The Power of Imagination</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.7.concept">"Using imagination enables creative dealing with fears"</p>
-                                <p data-i18n="week.7.desc">Children learn to make "pictures" in their minds, creating safe places and dealing creatively with things they're afraid of.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">8</span>
-                                <span class="name" data-i18n="week.8.title.5-8">Being Nice is Fun</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.8.concept.5-8">"Friendliness is one of the most powerful qualities"</p>
-                                <p data-i18n="week.8.desc.5-8">Children practice being complimentary and giving friendly feelings, creating a positive atmosphere around them.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ages 8-12 Program -->
-                <div class="program-content" id="ages-8-12">
-                    <div class="program-header">
-                        <span class="age-tag" data-i18n="programs.tab.8-11">Ages 8-12</span>
-                        <h3 data-i18n="programs.8-11.title">Building Present-Moment Awareness in Young Minds</h3>
-                        <p data-i18n="programs.8-11.desc">
-                            This program teaches children to be fully present in the moment, enabling them
-                            to understand their inner and outer world with an open and loving mind through
-                            age-appropriate exercises and deeper exploration.
-                        </p>
-                    </div>
-
-                    <div class="curriculum-accordion">
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">1</span>
-                                <span class="name" data-i18n="week.1.title.8-11">Observing and Focusing</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.1.concept.8-11">"Being fully present without judgments"</p>
-                                <p data-i18n="week.1.desc.8-11">Children learn to be present in the here and now, focusing attention on breath movement and starting to observe their inner world.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">2</span>
-                                <span class="name" data-i18n="week.2.title.8-11">Listening to Your Body</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.2.concept.8-11">"Your body acts as a barometer for experiences"</p>
-                                <p data-i18n="week.2.desc.8-11">Children develop conscious awareness of different body areas and learn to trust body signals, building self-awareness and healthy boundaries.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">3</span>
-                                <span class="name" data-i18n="week.3.title">Using All Five Senses</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.3.concept">"Learning to observe through senses without judgment"</p>
-                                <p data-i18n="week.3.desc">Through the "weather inside" exercise and raisin meditation, children distinguish between direct experience and mental interpretations.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">4</span>
-                                <span class="name" data-i18n="week.4.title.8-11">Patience, Faith & Letting Go</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.4.concept.8-11">"Managing desires by accepting what is"</p>
-                                <p data-i18n="week.4.desc.8-11">Children learn three core principles: patience (changes cannot be forced), faith (everything changes), and letting go (release the urge to control).</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">5</span>
-                                <span class="name" data-i18n="week.4.title">You Can Feel Feelings</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.4.concept">"Emotions are temporary reactions"</p>
-                                <p data-i18n="week.4.desc">Children understand the four basic emotions and learn the crucial distinction: "It's not you being angry, it's you having angry feelings."</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">6</span>
-                                <span class="name" data-i18n="week.6.title.8-11">The Wondrous World of Thoughts</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.6.concept.8-11">"Learning to observe and manage thoughts"</p>
-                                <p data-i18n="week.6.desc.8-11">In our stimulus-heavy world, children discover they can channel their mental energy more effectively and gain greater peace of mind.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">7</span>
-                                <span class="name" data-i18n="week.7.title.8-11">It's Fun to Be Kind</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.7.concept.8-11">"Kindness is like gentle rain that falls everywhere"</p>
-                                <p data-i18n="week.7.desc.8-11">Children learn that kindness touches the heart directly and that awareness of unkindness is essential for creating a better world.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">8</span>
-                                <span class="name" data-i18n="week.8.title.8-11">The Secret of Happiness</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.8.concept.8-11">"Happiness comes from being fully present"</p>
-                                <p data-i18n="week.8.desc.8-11">The culminating lesson teaches children to find joy in the present moment and the wonder of simplicity: in fresh bread, a poem, a sweet smile.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Teens 12-14 Program -->
-                <div class="program-content" id="ages-12-14">
-                    <div class="program-header">
-                        <span class="age-tag" data-i18n="programs.tab.12-14">Teens 12-14</span>
-                        <h3 data-i18n="programs.12-14.title">Finding Calm and Confidence in the Teenage Years</h3>
-                        <p data-i18n="programs.12-14.desc">
-                            This new introductory 10-week program helps teenagers navigate school stress,
-                            social pressure, and a busy mind. Through attention training, honest conversation,
-                            and real practice, teens learn to understand their thoughts and feelings,
-                            communicate with more awareness, and above all, be themselves.
-                        </p>
-                    </div>
-
-                    <div class="curriculum-accordion">
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">1</span>
-                                <span class="name" data-i18n="week.1.title.12-14">Observing and Focusing</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.1.concept.12-14">"Being fully present, without judgments"</p>
-                                <p data-i18n="week.1.desc.12-14">Attention training begins with observing the movement of the breath. Teens learn to enter the here and now, bring calm to a head full of worries, and start observing their inner world.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">2</span>
-                                <span class="name" data-i18n="week.2.title.12-14">Out of Your Head, Into Your Body</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.2.concept.12-14">"Your body reacts to experiences like a barometer"</p>
-                                <p data-i18n="week.2.desc.12-14">Teens learn to shine the spotlight of attention on the body, feel where their limits lie, and pick up its signals with a calm and curious attitude, without judging.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">3</span>
-                                <span class="name" data-i18n="week.3.title.12-14">The Sense of the Senses</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.3.concept.12-14">"Observing in the moment, as if for the very first time"</p>
-                                <p data-i18n="week.3.desc.12-14">Teens discover the difference between direct sensory experience and the flood of judgments, stories, and expectations that the critical mind adds to it.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">4</span>
-                                <span class="name" data-i18n="week.4.title.12-14">Dealing with Longing</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.4.concept.12-14">"Desires are the first step towards a better world"</p>
-                                <p data-i18n="week.4.desc.12-14">Teens explore longing for things to be different and learn to deal with desires without becoming fixated, using positive inner images to strengthen self-confidence.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">5</span>
-                                <span class="name" data-i18n="week.5.title.12-14">Patience, Faith and Letting Go</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.5.concept.12-14">"Acceptance actually opens doors"</p>
-                                <p data-i18n="week.5.desc.12-14">Working with images from their "movie mind," teens learn three key principles: patience (some things cannot be forced), faith (everything changes), and letting go of the urge to control.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">6</span>
-                                <span class="name" data-i18n="week.6.title.12-14">Communication</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.6.concept.12-14">"Good communication starts with listening"</p>
-                                <p data-i18n="week.6.desc.12-14">Teens practise listening as listening is meant to be: with their whole being, without judgment, saying what they really mean, and learning to reach a consensus together.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">7</span>
-                                <span class="name" data-i18n="week.7.title.12-14">Feeling Feelings</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.7.concept.12-14">"It's not that you are angry, you have feelings of anger"</p>
-                                <p data-i18n="week.7.desc.12-14">Anger, happiness, fear, and sadness: teens learn to notice, acknowledge, and kindly accept feelings, like weather you cannot change, but you can learn how to weather the storm.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">8</span>
-                                <span class="name" data-i18n="week.8.title.12-14">The Wondrous World of Thoughts</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.8.concept.12-14">"Not all the thoughts you have about yourself are true"</p>
-                                <p data-i18n="week.8.desc.12-14">Teens become familiar with their stream of thoughts, learn skills to deal with worry and disturbing thoughts, and gain more peace of mind, focus, and a more realistic self-image.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">9</span>
-                                <span class="name" data-i18n="week.9.title.12-14">Being Nice is Fun</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.9.concept.12-14">"Kindness is like gentle rain that falls everywhere"</p>
-                                <p data-i18n="week.9.desc.12-14">Practising kindness recalibrates the compass of the heart. Teens learn that kind words and deeds soften you, reduce prejudice and bullying, and that noticing unkindness brings you a step closer to compassion.</p>
-                            </div>
-                        </div>
-
-                        <div class="week-row">
-                            <button class="week-toggle" type="button">
-                                <span class="num">10</span>
-                                <span class="name" data-i18n="week.10.title.12-14">The Secret of Happiness</span>
-                                <span class="chev">&#9660;</span>
-                            </button>
-                            <div class="week-body">
-                                <p class="concept" data-i18n="week.10.concept.12-14">"The secret lies in consciously allowing these moments to happen"</p>
-                                <p data-i18n="week.10.desc.12-14">The closing lesson: every moment is new. Happiness can be found in little things, the wonder of simplicity, by being there with deep and undivided attention, without holding on or expecting.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Quote Section -->
         <section class="quote-section">
             <blockquote class="quote" data-i18n="programs.quote">
@@ -1696,64 +1032,32 @@
             </blockquote>
         </section>
 
-        <!-- Parent Support Section -->
-        <section class="parent-section">
+        <!-- Testimonials -->
+        <section class="testimonials-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 data-i18n="programs.support.title">Practising at Home</h2>
-                    <p data-i18n="programs.support.subtitle">What happens between the lessons matters just as much. None of this takes more than a few minutes.</p>
+                    <h2 data-i18n="testimonials.title">What Parents Say</h2>
                 </div>
-
-                <div class="home-grid">
-                    <div class="home-col">
-                        <h3 data-i18n="programs.parents.title">A Few Things That Help</h3>
-                        <ul class="home-list">
-                            <li data-i18n="programs.parents.1">Notice and name feelings together, without judging them</li>
-                            <li data-i18n="programs.parents.2">Take three slow breaths before dinner, or before bed</li>
-                            <li data-i18n="programs.parents.3">Leave a little quiet in the week, with nothing that has to happen</li>
-                            <li data-i18n="programs.parents.4">Let your child see you stop too</li>
-                        </ul>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p data-i18n="testimonials.1">My son has learned how to behave calmly in any difficult or negative situation. He has also improved his reaction to stress. This helps him overall with his study as well.</p>
                     </div>
-
-                    <div class="home-col">
-                        <h3 data-i18n="programs.practice.title">Try This Together</h3>
-                        <p class="home-lede" data-i18n="programs.practice.lede">A short practice that works at any age. Younger children may last a minute; older ones can sit for longer. Both are fine.</p>
-                        <ol class="home-steps">
-                            <li data-i18n="programs.practice.1">Sit somewhere comfortable, with both feet on the floor</li>
-                            <li data-i18n="programs.practice.2">Rest your hands in your lap and let your shoulders drop</li>
-                            <li data-i18n="programs.practice.3">Notice your tummy moving as you breathe, without changing anything</li>
-                            <li data-i18n="programs.practice.4">When your attention wanders, and it will, bring it gently back</li>
-                            <li data-i18n="programs.practice.5">Stop while it still feels easy</li>
-                        </ol>
-                        <p class="home-note" data-i18n="programs.practice.note">Nothing has to be achieved here. Noticing that the mind wandered <em>is</em> the practice.</p>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p data-i18n="testimonials.2">At home, we noticed that our child now takes a soft toy, rests it on their tummy, and breathes with it before sleep.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="credentials-section">
-            <div class="container">
-                <div class="credentials-content">
-                    <h2 data-i18n="programs.guide.title">Your Child's Mindfulness Guide</h2>
-                    <p data-i18n="programs.guide.text">
-                        These programs are taught by Surbhi Kakar, a mindfulness trainer for children
-                        and teenagers, trained through Eline Snel's renowned "Course to become a mindfulness
-                        children trainer." Surbhi brings a unique perspective combining her training in
-                        mindfulness with her background as a yoga teacher and data scientist.
-                    </p>
-                    <div class="credential-badges">
-                        <div class="credential-badge">
-                            <h4 data-i18n="programs.guide.academy">Academy for Mindful Teaching</h4>
-                            <p data-i18n="programs.guide.academy.desc">Mindfulness Trainer for Children</p>
-                        </div>
-                        <div class="credential-badge">
-                            <h4 data-i18n="programs.guide.snel">Eline Snel Method</h4>
-                            <p data-i18n="programs.guide.snel.desc">Mindfulness Children Trainer</p>
-                        </div>
-                        <div class="credential-badge">
-                            <h4 data-i18n="programs.guide.yogaminds">Yoga Minds</h4>
-                            <p data-i18n="programs.guide.yogaminds.desc">Certified Yoga Teacher</p>
-                        </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p data-i18n="testimonials.3">Before eating, our child now takes a moment to smell and really taste their food. They are enjoying their meals so much more.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p data-i18n="testimonials.4">My child has started sharing their feelings with us at home.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p data-i18n="testimonials.5">Surbhi is doing amazing job! I feel every child should learn these skills. They will carry this throughout their lives.</p>
                     </div>
                 </div>
             </div>
@@ -1827,34 +1131,7 @@
                 navLinks.classList.remove('active');
             });
         });
-
-        // Tab functionality
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const programContents = document.querySelectorAll('.program-content');
-
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all tabs and content
-                tabBtns.forEach(b => b.classList.remove('active'));
-                programContents.forEach(c => c.classList.remove('active'));
-
-                // Add active class to clicked tab
-                btn.classList.add('active');
-
-                // Show corresponding content
-                const tabId = btn.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
-            });
-        });
     </script>
 
-    <script>
-        // Curriculum accordion
-        document.querySelectorAll('.week-toggle').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                btn.parentElement.classList.toggle('open');
-            });
-        });
-    </script>
 </body>
 </html>
