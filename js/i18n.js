@@ -11,7 +11,7 @@ const translations = {
         // Homepage
         "hero.title": "Surbhi Kakar",
         "hero.subtitle": "Yoga & Mindfulness in Amstelveen",
-        "hero.intro": "Teaching children, teenagers and adults to settle, to notice what they are feeling, and to find their attention again. Through yoga, and through the mindfulness method of Eline Snel.",
+        "hero.intro": "Guiding children and adults toward mindful living through yoga, mindfulness training, and a balanced approach to life. Based in Amstelveen.",
         "hero.cta.programs": "Mindfulness Programs",
         "hero.cta.learn": "Learn More",
 
@@ -423,7 +423,7 @@ const translations = {
         // Homepage
         "hero.title": "Surbhi Kakar",
         "hero.subtitle": "Yoga & mindfulness in Amstelveen",
-        "hero.intro": "Kinderen, tieners en volwassenen leren tot rust te komen, te merken wat ze voelen, en hun aandacht terug te vinden. Via yoga, en via de mindfulnessmethode van Eline Snel.",
+        "hero.intro": "Begeleidt kinderen en volwassenen naar bewust leven door yoga, mindfulnesstraining en een evenwichtige benadering van het leven. Gevestigd in Amstelveen",
         "hero.cta.programs": "Mindfulness Programma's",
         "hero.cta.learn": "Meer Informatie",
 
