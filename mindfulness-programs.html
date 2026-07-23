@@ -693,10 +693,14 @@
 
 .outcomes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2.5rem;
-    max-width: 980px;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 2.5rem 3rem;
+    max-width: 820px;
     margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .outcomes-grid { grid-template-columns: 1fr; }
 }
 
 .outcome {
