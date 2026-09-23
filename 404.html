@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <title>Page Not Found | Surbhi Kakar</title>
+
+    <!-- Favicon (absolute paths: this page is served at any missing URL) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/favicon_io/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --olive-green: #6b703c;
+            --warm-off-white: #f5f0e3;
+            --light-beige: #e5dbc1;
+            --white: #ffffff;
+            --dark-brown: #484338;
+            --muted-brown: #755c3a;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            color: var(--dark-brown);
+            background: linear-gradient(135deg, var(--warm-off-white) 0%, var(--light-beige) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        main {
+            max-width: 560px;
+        }
+
+        .eyebrow {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted-brown);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            font-size: clamp(2.2rem, 6vw, 3rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--muted-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .nl {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.15rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 2px solid var(--olive-green);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--olive-green);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--olive-green);
+        }
+
+        .btn-secondary {
+            color: var(--dark-brown);
+            border-color: var(--dark-brown);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--dark-brown);
+            color: var(--white);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--dark-brown);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="eyebrow">404</p>
+        <h1>This page has wandered off</h1>
+        <p>The page you were looking for isn't here. Take a breath, and try one of these instead.</p>
+        <p class="nl" lang="nl">Deze pagina bestaat niet (meer).</p>
+        <div class="btn-group">
+            <a href="/" class="btn btn-primary">Home</a>
+            <a href="/mindfulness-programs" class="btn btn-secondary">Mindfulness Programs</a>
+            <a href="/contact" class="btn btn-secondary">Contact</a>
+        </div>
+    </main>
+</body>
+</html>

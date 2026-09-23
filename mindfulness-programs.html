@@ -12,6 +12,10 @@
     <meta property="og:description" content="Mindfulness programs designed for children and teenagers ages 5-14, teaching present-moment awareness through playful, age-appropriate practices.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://surbhikakar.com/mindfulness-programs">
+    <meta property="og:image" content="https://surbhikakar.com/img/og/og-programs.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="https://surbhikakar.com/mindfulness-programs">
 
     <title>Mindfulness Programs for Children & Teenagers | Surbhi Kakar</title>
@@ -65,13 +69,13 @@
     <style>
         /* CSS Custom Properties */
         :root {
-            --olive-green: #7e8446;
+            --olive-green: #6b703c;
             --soft-yellow: #ffda6b;
             --warm-off-white: #f5f0e3;
             --light-beige: #e5dbc1;
             --white: #ffffff;
             --dark-brown: #484338;
-            --muted-brown: #a58251;
+            --muted-brown: #755c3a;
             --warm-tan: #d4ad76;
             --tag-background: #d1c9b3;
 
@@ -124,6 +128,18 @@
 
         a:hover {
             color: var(--muted-brown);
+        }
+
+        /* Keyboard focus: visible ring, yellow on dark and olive backgrounds */
+        :focus-visible {
+            outline: 2px solid var(--dark-brown);
+            outline-offset: 3px;
+        }
+
+        .cta-section :focus-visible,
+        .offer-card :focus-visible,
+        footer :focus-visible {
+            outline-color: var(--soft-yellow);
         }
 
         /* Header & Navigation */
@@ -548,6 +564,7 @@
         }
         .gallery-teaser-imgs img {
             width: 100%;
+            height: auto;
             aspect-ratio: 4 / 3;
             object-fit: cover;
             border-radius: 8px;
@@ -1101,9 +1118,9 @@
                     <a href="gallery.html" class="teaser-btn" data-i18n="gallery.teaser.btn">View the Gallery</a>
                 </div>
                 <a href="gallery.html" class="gallery-teaser-imgs" aria-label="View the gallery">
-                    <img src="img/gallery/gallery-room-setup.jpg" alt="Session room set up with mats and cushions" loading="lazy">
-                    <img src="img/gallery/gallery-affirmation-bowl.jpg" alt="Affirmation cards and a bowl of treasures" loading="lazy">
-                    <img src="img/gallery/gallery-frog-altar.jpg" alt="A mindfulness frog and flowers in the room" loading="lazy">
+                    <img src="img/gallery/gallery-room-setup.webp" srcset="img/gallery/gallery-room-setup-600.webp 600w, img/gallery/gallery-room-setup.webp 1100w" sizes="(max-width: 768px) 100vw, 560px" alt="Session room set up with mats and cushions" loading="lazy" width="1100" height="825">
+                    <img src="img/gallery/gallery-affirmation-bowl.webp" srcset="img/gallery/gallery-affirmation-bowl-600.webp 600w, img/gallery/gallery-affirmation-bowl.webp 1100w" sizes="(max-width: 768px) 100vw, 560px" alt="Affirmation cards and a bowl of treasures" loading="lazy" width="1100" height="825">
+                    <img src="img/gallery/gallery-frog-altar.webp" srcset="img/gallery/gallery-frog-altar-600.webp 600w, img/gallery/gallery-frog-altar.webp 1100w" sizes="(max-width: 768px) 100vw, 560px" alt="A mindfulness frog and flowers in the room" loading="lazy" width="1100" height="825">
                 </a>
             </div>
         </section>

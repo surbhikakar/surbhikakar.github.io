@@ -12,6 +12,11 @@
     <meta property="og:description" content="Guiding children and adults toward mindful living through yoga, mindfulness training, and a balanced approach to life.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://surbhikakar.com">
+    <meta property="og:image" content="https://surbhikakar.com/img/og/og-home.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://surbhikakar.com/">
     <meta property="og:locale" content="en_US">
 
     <title>Mindfulness for Children in Amstelveen | Surbhi Kakar</title>
@@ -60,13 +65,13 @@
     <style>
         /* CSS Custom Properties */
         :root {
-            --olive-green: #7e8446;
+            --olive-green: #6b703c;
             --soft-yellow: #ffda6b;
             --warm-off-white: #f5f0e3;
             --light-beige: #e5dbc1;
             --white: #ffffff;
             --dark-brown: #484338;
-            --muted-brown: #a58251;
+            --muted-brown: #755c3a;
             --warm-tan: #d4ad76;
             --tag-background: #d1c9b3;
 
@@ -119,6 +124,18 @@
 
         a:hover {
             color: var(--muted-brown);
+        }
+
+        /* Keyboard focus: visible ring, yellow on dark and olive backgrounds */
+        :focus-visible {
+            outline: 2px solid var(--dark-brown);
+            outline-offset: 3px;
+        }
+
+        .cta-section :focus-visible,
+        .offer-card :focus-visible,
+        footer :focus-visible {
+            outline-color: var(--soft-yellow);
         }
 
         /* Header & Navigation */
